@@ -37,7 +37,7 @@ der nächste Bereich erfasst. Der Mediator beobachtet kontinuierlich die Drohnen
 Informationen beim Mediator vorliegen, beginnt die nächste Phase mit anreisenden Teilnehmern.
 Die Anzeige beobachtet hierzu kontinuierlich den Mediator. Die Wartezeit zwischen zwei Aufrufen
 ist 500ms. Mehr als drei aufeinanderfolgende Plätze werden zusammen-gefasst. Beispiel: Phase I
-- A1[1-1000],B1[1-1000],C11[1-1000]... ** 2 Sekunden Wartezeit ** A2[1-1000],B2[1-1000]...;
+A1[1-1000],B1[1-1000],C11[1-1000]... ** 2 Sekunden Wartezeit ** A2[1-1000],B2[1-1000]...;
 Phase II - A1[55,92,212-231]... Die aufgerufenen Teilnehmer begeben sich umgehend zu Ihren
 Plätzen.
 
