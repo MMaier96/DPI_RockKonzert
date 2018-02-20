@@ -9,6 +9,7 @@
  
  ### 3. Command  (Example)
  ![Command UML](https://i.imgur.com/ARciRX8.png)
+ The command design pattern is used to control an object with multiple commands. In this example a light will be controlled by the RemoteControl. In this case there are two types of commands (LightsOff/LightsOn) objects which implements the ICommand interface. The command can be assigned to the RemoteControl to execute the command and control the light with it.
  
  
  ## Task
