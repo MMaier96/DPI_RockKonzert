@@ -1,12 +1,13 @@
  # Rockconcert
  ## Used Design Patterns
- ### 1. Mediator
+ ### 1. Mediator (Example)
  ![Mediator UML](https://i.imgur.com/gN7Fp38.png)
  
- ### 2. Observer
+ ### 2. Observer  (Example)
+ An observer is used to register one or multiple objects to an observer which will be notified if an object triggers an observed event. In this example a fire department will be notified if a detector calls the falseAlarm() method
  ![Observer UML](https://i.imgur.com/kklq8PH.png)
  
- ### 3. Command
+ ### 3. Command  (Example)
  ![Command UML](https://i.imgur.com/ARciRX8.png)
  
  
