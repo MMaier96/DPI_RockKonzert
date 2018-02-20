@@ -1,13 +1,13 @@
  # Rockconcert
  ## Used Design Patterns
  ### 1. Mediator
- <explanation>
+ ![Mediator UML](https://i.imgur.com/gN7Fp38.png)
  
  ### 2. Observer
- <explanation>
+ ![Observer UML](https://i.imgur.com/kklq8PH.png)
  
  ### 3. Command
- <explanation>
+ ![Command UML](https://i.imgur.com/ARciRX8.png)
  
  
  ## Task
