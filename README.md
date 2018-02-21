@@ -1,6 +1,7 @@
  # Rockconcert
  ## Used Design Patterns
  ### 1. Mediator (Example)
+ The mediator design pattern implements the command design pattern. The mediator coordinates the behaviour of the registered objects. In this example the ADCMediator send a status to the runway or the flight, if they grants permission to land.
  ![Mediator UML](https://i.imgur.com/gN7Fp38.png)
  
  ### 2. Observer  (Example)
