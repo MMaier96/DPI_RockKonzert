@@ -74,7 +74,7 @@
  > Example: A01[1,5,20-27,66-72, ...]
  
   ## UML Diagram
-  ![UML Diagram RockConcert](https://i.imgur.com/5GDDEem.png)
+  ![UML Diagram RockConcert](uml/diagram.svg)
   
   ## Intention
   This project was created as an individual work for a testat of the lecture software engeneering #2.
