@@ -36,4 +36,9 @@ public abstract class Phase implements IPhase{
 	public void setOutdoorCapacity(double capacity) {
 		this.outdoorCapacity = capacity;
 	}
+	
+	@Override
+	public String toString() {
+		return "Phase" + String.format("%02d", id);
+	}
 }

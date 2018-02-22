@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 import application.architecture.areas.IArea;
 import application.architecture.areas.IWaitingArea;
+import application.architecture.areas.subareas.IndoorArea;
+import application.architecture.areas.subareas.OutdoorArea;
+import application.config.AppConfig;
+
+import static application.logger.Logger.*;
+
 
 public class Stadion implements ILocation {
 
@@ -13,9 +19,39 @@ public class Stadion implements ILocation {
 	private String locationName;
 
 	public Stadion() {
+		printMessage("Stadion creation started!");
 		areas = new ArrayList<IArea>();
 		entrances = new ArrayList<Entrance>();
 		waitingAreas = new ArrayList<IWaitingArea>();
+		
+
+		printMessage("Area creation started!");
+		
+		createAreas();
+		
+		createSectorsOfAreas();
+	}
+
+	private void createSectorsOfAreas() {
+
+		for (IArea iArea : areas) {
+			iArea.createSectors();
+		}
+	}
+
+	private void createAreas() {
+		int charindex = 65;
+		printInfo("creating indoor areas ...");
+		for (int i = 0; i < AppConfig.instance.amountIndoorAreas; i++) {
+			areas.add(new IndoorArea((char) charindex++  + ""));
+		}
+		
+		printInfo("creating outdoor areas ...");
+		for (int i = 0; i < AppConfig.instance.amountOutdoorAreas; i++) {
+			areas.add(new OutdoorArea((char) charindex++  + ""));
+		}
+		
+		printInfo(areas.size() + " areas were created! " + areas.toString());
 	}
 
 	@Override
@@ -43,6 +79,15 @@ public class Stadion implements ILocation {
 		return null;
 	}
 
+	
+	public ArrayList<IArea> getIndoorAreas() {
+		return (ArrayList<IArea>) areas.subList(0, AppConfig.instance.amountIndoorAreas);
+	}
+	
+	public ArrayList<IArea> getOutdoorAreas() {
+		return (ArrayList<IArea>) areas.subList(AppConfig.instance.amountIndoorAreas, areas.size()-1);
+	}
+	
 	@Override
 	public Entrance getEntranceByName(String entranceName) {
 		for (Entrance iEntrance : entrances) {

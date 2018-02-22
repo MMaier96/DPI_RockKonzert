@@ -15,6 +15,7 @@ public abstract class Sector implements ISector {
 	public Sector(int seatsAmount, IArea area, int id) {
 		this.relatedArea = area;	
 		this.seatsAmount = seatsAmount;
+		this.sectorId = id;
 		this.seats = new ArrayList<Seat>(seatsAmount);
 		
 		createSeats();
@@ -67,5 +68,10 @@ public abstract class Sector implements ISector {
 	@Override
 	public void setSectorId(int id) {
 		sectorId = id;
+	}
+	
+	@Override
+	public String toString() {
+		return getSectorName();
 	}
 }

@@ -10,4 +10,6 @@ public interface IArea {
 	ISector getSectorByName(String name);
 	
 	void removeSector(ISector sector);
+
+	void createSectors();
 }

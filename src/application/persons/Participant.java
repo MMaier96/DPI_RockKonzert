@@ -9,6 +9,11 @@ public class Participant implements IVisualDisplayListener{
 	private String surname;
 	private Ticket ticket;
 	
+	public Participant(String forename, String surname) {
+		this.forename = forename;
+		this.surname = surname;
+	}
+	
 	public String getForename() {
 		return forename;
 	}

@@ -1,5 +1,7 @@
 package application.architecture.areas.subareas;
 
+import static application.logger.Logger.printInfo;
+
 import application.architecture.LocationType;
 import application.architecture.areas.Area;
 import application.architecture.sectors.subsectors.OutdoorSector;
@@ -10,13 +12,15 @@ public class OutdoorArea extends Area{
 	public OutdoorArea(String name) {
 		super(name);
 		this.locationType = LocationType.OUTDOOR;
-		createSectors();
 	}
 
-	private void createSectors() {
+	@Override
+	public void createSectors() {
+		printInfo("creating sector for OutdoorArea: " + name);
 		for (int i = 1; i <= 5; i++) {
 			sectors.add(new OutdoorSector(this,i));
 		}
+		printInfo(sectors.size() + " sectors were created for OutdoorArea: " + name + " " + sectors.toString());
 	}
 
 	public LocationType getLocationType() {

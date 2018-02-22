@@ -11,8 +11,10 @@ public abstract class Area implements IArea {
 
 	
 	public Area(String name) {
+		sectors = new ArrayList<ISector>();
 		this.name = name;
 	}
+	
 	
 	@Override
 	public void addSector(ISector sector) {
@@ -39,5 +41,10 @@ public abstract class Area implements IArea {
 		if (sectors.contains(sector)) {
 			sectors.remove(sector);
 		}
+	}
+	
+	@Override
+	public String toString() {
+		return name;
 	}
 }
