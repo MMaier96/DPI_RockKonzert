@@ -1,8 +1,9 @@
 package application.persons;
 
+import application.architecture.visualdisplay.IVisualDisplayListener;
 import application.tickets.Ticket;
 
-public class Participant {
+public class Participant implements IVisualDisplayListener{
 
 	private String forename;
 	private String surname;
@@ -25,6 +26,12 @@ public class Participant {
 	}
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
+	}
+	
+	@Override
+	public void handleNotification() {
+		// TODO handle status from display
+		
 	}
 	
 	
