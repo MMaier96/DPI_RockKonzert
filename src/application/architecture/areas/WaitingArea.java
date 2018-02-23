@@ -11,8 +11,8 @@ public abstract class WaitingArea implements IWaitingArea{
 	protected VisualDisplay visualDisplay;
 	protected ArrayList<Participant> participants;
 	
-	public WaitingArea(VisualDisplay visualDisplay) {
-		this.visualDisplay = visualDisplay;
+	public WaitingArea() {
+		this.visualDisplay = new VisualDisplay();
 		this.participants = new ArrayList<Participant>();
 	}
 

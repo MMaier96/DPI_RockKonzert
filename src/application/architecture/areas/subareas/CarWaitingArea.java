@@ -8,8 +8,8 @@ public class CarWaitingArea extends WaitingArea {
 
 	private WaitingAreaTypes waitingAreaType;
 
-	public CarWaitingArea(VisualDisplay visualDisplay) {
-		super(visualDisplay);
+	public CarWaitingArea() {
+		super();
 		this.waitingAreaType = WaitingAreaTypes.CAR;
 	}
 

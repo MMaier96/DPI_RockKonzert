@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0baddc11-1a55-49e1-a7ca-c6a58816f002" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Class Model.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/architecture/Entrance.java" afterPath="$PROJECT_DIR$/src/application/architecture/Entrance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/architecture/areas/IWaitingArea.java" afterPath="$PROJECT_DIR$/src/application/architecture/areas/IWaitingArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/architecture/areas/subareas/CarWaitingArea.java" afterPath="$PROJECT_DIR$/src/application/architecture/areas/subareas/CarWaitingArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/architecture/areas/subareas/PublicTransportationWaitingArea.java" afterPath="$PROJECT_DIR$/src/application/architecture/areas/subareas/PublicTransportationWaitingArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/commands/DroneCommandCollect.java" afterPath="$PROJECT_DIR$/src/application/commands/DroneCommandCollect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/commands/DroneCommandDepart.java" afterPath="$PROJECT_DIR$/src/application/commands/DroneCommandDepart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/commands/DroneCommandLand.java" afterPath="$PROJECT_DIR$/src/application/commands/DroneCommandLand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/commands/DroneCommandNext.java" afterPath="$PROJECT_DIR$/src/application/commands/DroneCommandNext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/commands/IDroneCommand.java" afterPath="$PROJECT_DIR$/src/application/commands/IDroneCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/drones/Drone.java" afterPath="$PROJECT_DIR$/src/application/drones/Drone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/drones/IDrone.java" afterPath="$PROJECT_DIR$/src/application/drones/IDrone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/drones/IDroneListener.java" afterPath="$PROJECT_DIR$/src/application/drones/IDroneListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/drones/subdrones/IndoorDrone.java" afterPath="$PROJECT_DIR$/src/application/drones/subdrones/IndoorDrone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/drones/subdrones/OutdoorDrone.java" afterPath="$PROJECT_DIR$/src/application/drones/subdrones/OutdoorDrone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/persons/ConcertMediator.java" afterPath="$PROJECT_DIR$/src/application/persons/ConcertMediator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/persons/IConcertMediator.java" afterPath="$PROJECT_DIR$/src/application/persons/IConcertMediator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/persons/Participant.java" afterPath="$PROJECT_DIR$/src/application/persons/Participant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/phases/IPhase.java" afterPath="$PROJECT_DIR$/src/application/phases/IPhase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/phases/Phase1.java" afterPath="$PROJECT_DIR$/src/application/phases/Phase1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/phases/Phase2.java" afterPath="$PROJECT_DIR$/src/application/phases/Phase2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/phases/Phase3.java" afterPath="$PROJECT_DIR$/src/application/phases/Phase3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/architecture/VisualDisplay.java" afterPath="$PROJECT_DIR$/src/application/architecture/visualdisplay/VisualDisplay.java" />
-    </list>
+    <list default="true" id="0baddc11-1a55-49e1-a7ca-c6a58816f002" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,214 +10,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="442.0" y="1256.0">application.architecture.visualdisplay.VisualDisplay</node>
-                <node x="1201.0" y="1566.0">application.architecture.LocationType</node>
-                <node x="712.0" y="450.0">application.architecture.sectors.subsectors.OutdoorSector</node>
-                <node x="546.5" y="0.0">application.architecture.sectors.ISector</node>
-                <node x="62.0" y="1300.0">application.phases.Phase</node>
-                <node x="615.5" y="643.0">application.drones.IDrone</node>
-                <node x="1126.0" y="1358.0">application.commands.DroneCommandDepart</node>
-                <node x="90.5" y="1154.0">application.phases.IPhase</node>
-                <node x="1360.0" y="982.0">application.architecture.areas.subareas.CarWaitingArea</node>
-                <node x="1054.0" y="169.0">application.architecture.areas.Area</node>
-                <node x="0.0" y="1566.0">application.concert.Concert</node>
-                <node x="838.0" y="1566.0">application.architecture.areas.types.WaitingAreaTypes</node>
-                <node x="635.0" y="1566.0">application.architecture.sectors.Seat</node>
-                <node x="1368.0" y="1566.0">application.Application</node>
-                <node x="1081.5" y="0.0">application.architecture.areas.IArea</node>
-                <node x="139.0" y="1469.0">application.phases.Phase3</node>
-                <node x="580.0" y="1004.0">application.drones.subdrones.OutdoorDrone</node>
-                <node x="1216.0" y="384.0">application.architecture.areas.subareas.OutdoorArea</node>
-                <node x="1166.75" y="643.0">application.architecture.areas.IWaitingArea</node>
-                <node x="278.0" y="1469.0">application.phases.Phase1</node>
-                <node x="0.0" y="1469.0">application.phases.Phase2</node>
-                <node x="100.75" y="856.0">application.persons.ConcertMediator</node>
-                <node x="669.5" y="812.0">application.drones.Drone</node>
-                <node x="943.0" y="1358.0">application.commands.DroneCommandNext</node>
-                <node x="1320.0" y="1358.0">application.commands.DroneCommandCollect</node>
-                <node x="758.0" y="1358.0">application.commands.DroneCommandLand</node>
-                <node x="0.0" y="643.0">application.persons.IConcertMediator</node>
-                <node x="0.0" y="279.0">application.architecture.Stadion</node>
-                <node x="331.0" y="698.5">application.drones.IDroneListener</node>
-                <node x="993.0" y="982.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
-                <node x="542.5" y="191.0">application.architecture.sectors.Sector</node>
-                <node x="475.0" y="450.0">application.architecture.sectors.subsectors.IndoorSector</node>
-                <node x="1178.75" y="790.0">application.architecture.areas.WaitingArea</node>
-                <node x="1541.0" y="1256.0">application.persons.Participant</node>
-                <node x="1049.25" y="1256.0">application.commands.DroneCommand</node>
-                <node x="47.0" y="0.0">application.architecture.ILocation</node>
-                <node x="289.0" y="1566.0">application.architecture.Entrance</node>
-                <node x="779.0" y="1004.0">application.drones.subdrones.IndoorDrone</node>
-                <node x="1571.0" y="1154.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
-                <node x="984.0" y="384.0">application.architecture.areas.subareas.IndoorArea</node>
-                <node x="1029.0" y="1566.0">application.tickets.Ticket</node>
-                <node x="1046.25" y="1154.0">application.commands.IDroneCommand</node>
-                <node x="475.5" y="1154.0">application.persons.IConcertMediatorListener</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="application.architecture.Stadion" target="application.architecture.ILocation">
-                  <point x="0.0" y="-159.5" />
-                  <point x="0.0" y="114.5" />
-                </edge>
-                <edge source="application.commands.DroneCommandCollect" target="application.commands.DroneCommand">
-                  <point x="0.0" y="-26.0" />
-                  <point x="1408.0" y="1328.0" />
-                  <point x="1170.875" y="1328.0" />
-                  <point x="52.125" y="26.0" />
-                </edge>
-                <edge source="application.phases.Phase" target="application.phases.IPhase">
-                  <point x="0.0" y="-59.5" />
-                  <point x="0.0" y="48.0" />
-                </edge>
-                <edge source="application.architecture.areas.subareas.OutdoorArea" target="application.architecture.areas.Area">
-                  <point x="0.0" y="-49.0" />
-                  <point x="1327.0" y="359.0" />
-                  <point x="1285.75" y="359.0" />
-                  <point x="77.25" y="82.5" />
-                </edge>
-                <edge source="application.drones.subdrones.IndoorDrone" target="application.drones.Drone">
-                  <point x="0.0" y="-37.5" />
-                  <point x="863.5" y="979.0" />
-                  <point x="815.0" y="979.0" />
-                  <point x="48.5" y="71.0" />
-                </edge>
-                <edge source="application.persons.ConcertMediator" target="application.persons.IConcertMediator">
-                  <point x="-96.75" y="-126.5" />
-                  <point x="197.5" y="831.0" />
-                  <point x="155.5" y="831.0" />
-                  <point x="0.0" y="81.5" />
-                </edge>
-                <edge source="application.architecture.areas.subareas.CarWaitingArea" target="application.architecture.areas.WaitingArea">
-                  <point x="0.0" y="-37.5" />
-                  <point x="1487.0" y="957.0" />
-                  <point x="1400.75" y="957.0" />
-                  <point x="74.0" y="71.0" />
-                </edge>
-                <edge source="application.architecture.sectors.subsectors.OutdoorSector" target="application.architecture.sectors.Sector">
-                  <point x="0.0" y="-37.5" />
-                  <point x="825.5" y="425.0" />
-                  <point x="785.5" y="425.0" />
-                  <point x="81.0" y="104.5" />
-                </edge>
-                <edge source="application.commands.DroneCommand" target="application.commands.IDroneCommand">
-                  <point x="0.0" y="-26.0" />
-                  <point x="0.0" y="26.0" />
-                </edge>
-                <edge source="application.phases.Phase2" target="application.phases.Phase">
-                  <point x="0.0" y="-26.0" />
-                  <point x="59.5" y="1444.0" />
-                  <point x="107.5" y="1444.0" />
-                  <point x="-91.0" y="59.5" />
-                </edge>
-                <edge source="application.architecture.areas.subareas.IndoorArea" target="application.architecture.areas.Area">
-                  <point x="0.0" y="-49.0" />
-                  <point x="1090.0" y="359.0" />
-                  <point x="1131.25" y="359.0" />
-                  <point x="-77.25" y="82.5" />
-                </edge>
-                <edge source="application.drones.Drone" target="application.drones.IDrone">
-                  <point x="0.0" y="-71.0" />
-                  <point x="0.0" y="59.5" />
-                </edge>
-                <edge source="application.architecture.visualdisplay.VisualDisplay" target="application.persons.IConcertMediatorListener">
-                  <point x="0.0" y="-93.0" />
-                  <point x="0.0" y="26.0" />
-                </edge>
-                <edge source="application.architecture.areas.WaitingArea" target="application.architecture.areas.IWaitingArea">
-                  <point x="0.0" y="-71.0" />
-                  <point x="0.0" y="48.5" />
-                </edge>
-                <edge source="application.phases.Phase3" target="application.phases.Phase">
-                  <point x="0.0" y="-26.0" />
-                  <point x="0.0" y="59.5" />
-                </edge>
-                <edge source="application.architecture.areas.subareas.PublicTransportationWaitingArea" target="application.architecture.areas.WaitingArea">
-                  <point x="0.0" y="-37.5" />
-                  <point x="1166.5" y="957.0" />
-                  <point x="1252.75" y="957.0" />
-                  <point x="-74.0" y="71.0" />
-                </edge>
-                <edge source="application.drones.subdrones.OutdoorDrone" target="application.drones.Drone">
-                  <point x="0.0" y="-37.5" />
-                  <point x="669.5" y="979.0" />
-                  <point x="718.0" y="979.0" />
-                  <point x="-48.5" y="71.0" />
-                </edge>
-                <edge source="application.architecture.sectors.Sector" target="application.architecture.sectors.ISector">
-                  <point x="0.0" y="-104.5" />
-                  <point x="0.0" y="70.5" />
-                </edge>
-                <edge source="application.commands.DroneCommandNext" target="application.commands.DroneCommand">
-                  <point x="0.0" y="-26.0" />
-                  <point x="1024.5" y="1338.0" />
-                  <point x="1101.375" y="1338.0" />
-                  <point x="-17.375" y="26.0" />
-                </edge>
-                <edge source="application.architecture.areas.Area" target="application.architecture.areas.IArea">
-                  <point x="0.0" y="-82.5" />
-                  <point x="0.0" y="59.5" />
-                </edge>
-                <edge source="application.persons.ConcertMediator" target="application.drones.IDroneListener">
-                  <point x="96.75" y="-126.5" />
-                  <point x="391.0" y="831.0" />
-                  <point x="433.0" y="831.0" />
-                  <point x="0.0" y="26.0" />
-                </edge>
-                <edge source="application.commands.DroneCommandDepart" target="application.commands.DroneCommand">
-                  <point x="0.0" y="-26.0" />
-                  <point x="1213.0" y="1338.0" />
-                  <point x="1136.125" y="1338.0" />
-                  <point x="17.375" y="26.0" />
-                </edge>
-                <edge source="application.commands.DroneCommandLand" target="application.commands.DroneCommand">
-                  <point x="5.6843418860808015E-14" y="-26.0" />
-                  <point x="840.5" y="1328.0" />
-                  <point x="1066.625" y="1328.0" />
-                  <point x="-52.125" y="26.0" />
-                </edge>
-                <edge source="application.phases.Phase1" target="application.phases.Phase">
-                  <point x="0.0" y="-26.0" />
-                  <point x="337.5" y="1444.0" />
-                  <point x="289.5" y="1444.0" />
-                  <point x="91.0" y="59.5" />
-                </edge>
-                <edge source="application.persons.Participant" target="application.architecture.visualdisplay.IVisualDisplayListener">
-                  <point x="0.0" y="-59.5" />
-                  <point x="0.0" y="26.0" />
-                </edge>
-                <edge source="application.architecture.sectors.subsectors.IndoorSector" target="application.architecture.sectors.Sector">
-                  <point x="0.0" y="-37.5" />
-                  <point x="583.5" y="425.0" />
-                  <point x="623.5" y="425.0" />
-                  <point x="-81.0" y="104.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.5312686122692077" x="800.2466367713007" y="689.5000000000002" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -278,51 +48,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_Rockkonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_RockKonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_Rockkonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_RockKonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_Rockkonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPI_RockKonzert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="DPI_Rockkonzert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI_Rockkonzert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI_Rockkonzert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI_Rockkonzert" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI_Rockkonzert" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI_Rockkonzert" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,12 +94,86 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -403,29 +228,6 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -582,27 +384,6 @@
       <setting name="launchBrowserUrl" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -665,46 +446,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -727,6 +472,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0baddc11-1a55-49e1-a7ca-c6a58816f002" name="Default" comment="" />
@@ -742,37 +490,36 @@
     <option name="totallyTimeSpent" value="1241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,207 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="442.0" y="1256.0">application.architecture.visualdisplay.VisualDisplay</node>
-            <node x="1201.0" y="1566.0">application.architecture.LocationType</node>
-            <node x="712.0" y="450.0">application.architecture.sectors.subsectors.OutdoorSector</node>
-            <node x="546.5" y="0.0">application.architecture.sectors.ISector</node>
-            <node x="62.0" y="1300.0">application.phases.Phase</node>
-            <node x="615.5" y="643.0">application.drones.IDrone</node>
-            <node x="1126.0" y="1358.0">application.commands.DroneCommandDepart</node>
-            <node x="90.5" y="1154.0">application.phases.IPhase</node>
-            <node x="1360.0" y="982.0">application.architecture.areas.subareas.CarWaitingArea</node>
-            <node x="1054.0" y="169.0">application.architecture.areas.Area</node>
-            <node x="0.0" y="1566.0">application.concert.Concert</node>
-            <node x="838.0" y="1566.0">application.architecture.areas.types.WaitingAreaTypes</node>
-            <node x="635.0" y="1566.0">application.architecture.sectors.Seat</node>
-            <node x="1368.0" y="1566.0">application.Application</node>
-            <node x="1081.5" y="0.0">application.architecture.areas.IArea</node>
-            <node x="139.0" y="1469.0">application.phases.Phase3</node>
-            <node x="580.0" y="1004.0">application.drones.subdrones.OutdoorDrone</node>
-            <node x="1216.0" y="384.0">application.architecture.areas.subareas.OutdoorArea</node>
-            <node x="1166.75" y="643.0">application.architecture.areas.IWaitingArea</node>
-            <node x="278.0" y="1469.0">application.phases.Phase1</node>
-            <node x="0.0" y="1469.0">application.phases.Phase2</node>
-            <node x="100.75" y="856.0">application.persons.ConcertMediator</node>
-            <node x="669.5" y="812.0">application.drones.Drone</node>
-            <node x="943.0" y="1358.0">application.commands.DroneCommandNext</node>
-            <node x="1320.0" y="1358.0">application.commands.DroneCommandCollect</node>
-            <node x="758.0" y="1358.0">application.commands.DroneCommandLand</node>
-            <node x="0.0" y="643.0">application.persons.IConcertMediator</node>
-            <node x="0.0" y="279.0">application.architecture.Stadion</node>
-            <node x="331.0" y="698.5">application.drones.IDroneListener</node>
-            <node x="993.0" y="982.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
-            <node x="542.5" y="191.0">application.architecture.sectors.Sector</node>
-            <node x="475.0" y="450.0">application.architecture.sectors.subsectors.IndoorSector</node>
-            <node x="1178.75" y="790.0">application.architecture.areas.WaitingArea</node>
-            <node x="1541.0" y="1256.0">application.persons.Participant</node>
-            <node x="1049.25" y="1256.0">application.commands.DroneCommand</node>
-            <node x="47.0" y="0.0">application.architecture.ILocation</node>
-            <node x="289.0" y="1566.0">application.architecture.Entrance</node>
-            <node x="779.0" y="1004.0">application.drones.subdrones.IndoorDrone</node>
-            <node x="1571.0" y="1154.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
-            <node x="984.0" y="384.0">application.architecture.areas.subareas.IndoorArea</node>
-            <node x="1029.0" y="1566.0">application.tickets.Ticket</node>
-            <node x="1046.25" y="1154.0">application.commands.IDroneCommand</node>
-            <node x="475.5" y="1154.0">application.persons.IConcertMediatorListener</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="application.architecture.Stadion" target="application.architecture.ILocation">
-              <point x="0.0" y="-159.5" />
-              <point x="0.0" y="114.5" />
-            </edge>
-            <edge source="application.commands.DroneCommandCollect" target="application.commands.DroneCommand">
-              <point x="0.0" y="-26.0" />
-              <point x="1408.0" y="1328.0" />
-              <point x="1170.875" y="1328.0" />
-              <point x="52.125" y="26.0" />
-            </edge>
-            <edge source="application.phases.Phase" target="application.phases.IPhase">
-              <point x="0.0" y="-59.5" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="application.architecture.areas.subareas.OutdoorArea" target="application.architecture.areas.Area">
-              <point x="0.0" y="-49.0" />
-              <point x="1327.0" y="359.0" />
-              <point x="1285.75" y="359.0" />
-              <point x="77.25" y="82.5" />
-            </edge>
-            <edge source="application.drones.subdrones.IndoorDrone" target="application.drones.Drone">
-              <point x="0.0" y="-37.5" />
-              <point x="863.5" y="979.0" />
-              <point x="815.0" y="979.0" />
-              <point x="48.5" y="71.0" />
-            </edge>
-            <edge source="application.persons.ConcertMediator" target="application.persons.IConcertMediator">
-              <point x="-96.75" y="-126.5" />
-              <point x="197.5" y="831.0" />
-              <point x="155.5" y="831.0" />
-              <point x="0.0" y="81.5" />
-            </edge>
-            <edge source="application.architecture.areas.subareas.CarWaitingArea" target="application.architecture.areas.WaitingArea">
-              <point x="0.0" y="-37.5" />
-              <point x="1487.0" y="957.0" />
-              <point x="1400.75" y="957.0" />
-              <point x="74.0" y="71.0" />
-            </edge>
-            <edge source="application.architecture.sectors.subsectors.OutdoorSector" target="application.architecture.sectors.Sector">
-              <point x="0.0" y="-37.5" />
-              <point x="825.5" y="425.0" />
-              <point x="785.5" y="425.0" />
-              <point x="81.0" y="104.5" />
-            </edge>
-            <edge source="application.commands.DroneCommand" target="application.commands.IDroneCommand">
-              <point x="0.0" y="-26.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="application.phases.Phase2" target="application.phases.Phase">
-              <point x="0.0" y="-26.0" />
-              <point x="59.5" y="1444.0" />
-              <point x="107.5" y="1444.0" />
-              <point x="-91.0" y="59.5" />
-            </edge>
-            <edge source="application.architecture.areas.subareas.IndoorArea" target="application.architecture.areas.Area">
-              <point x="0.0" y="-49.0" />
-              <point x="1090.0" y="359.0" />
-              <point x="1131.25" y="359.0" />
-              <point x="-77.25" y="82.5" />
-            </edge>
-            <edge source="application.drones.Drone" target="application.drones.IDrone">
-              <point x="0.0" y="-71.0" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="application.architecture.visualdisplay.VisualDisplay" target="application.persons.IConcertMediatorListener">
-              <point x="0.0" y="-93.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="application.architecture.areas.WaitingArea" target="application.architecture.areas.IWaitingArea">
-              <point x="0.0" y="-71.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="application.phases.Phase3" target="application.phases.Phase">
-              <point x="0.0" y="-26.0" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="application.architecture.areas.subareas.PublicTransportationWaitingArea" target="application.architecture.areas.WaitingArea">
-              <point x="0.0" y="-37.5" />
-              <point x="1166.5" y="957.0" />
-              <point x="1252.75" y="957.0" />
-              <point x="-74.0" y="71.0" />
-            </edge>
-            <edge source="application.drones.subdrones.OutdoorDrone" target="application.drones.Drone">
-              <point x="0.0" y="-37.5" />
-              <point x="669.5" y="979.0" />
-              <point x="718.0" y="979.0" />
-              <point x="-48.5" y="71.0" />
-            </edge>
-            <edge source="application.architecture.sectors.Sector" target="application.architecture.sectors.ISector">
-              <point x="0.0" y="-104.5" />
-              <point x="0.0" y="70.5" />
-            </edge>
-            <edge source="application.commands.DroneCommandNext" target="application.commands.DroneCommand">
-              <point x="0.0" y="-26.0" />
-              <point x="1024.5" y="1338.0" />
-              <point x="1101.375" y="1338.0" />
-              <point x="-17.375" y="26.0" />
-            </edge>
-            <edge source="application.architecture.areas.Area" target="application.architecture.areas.IArea">
-              <point x="0.0" y="-82.5" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="application.persons.ConcertMediator" target="application.drones.IDroneListener">
-              <point x="96.75" y="-126.5" />
-              <point x="391.0" y="831.0" />
-              <point x="433.0" y="831.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="application.commands.DroneCommandDepart" target="application.commands.DroneCommand">
-              <point x="0.0" y="-26.0" />
-              <point x="1213.0" y="1338.0" />
-              <point x="1136.125" y="1338.0" />
-              <point x="17.375" y="26.0" />
-            </edge>
-            <edge source="application.commands.DroneCommandLand" target="application.commands.DroneCommand">
-              <point x="5.6843418860808015E-14" y="-26.0" />
-              <point x="840.5" y="1328.0" />
-              <point x="1066.625" y="1328.0" />
-              <point x="-52.125" y="26.0" />
-            </edge>
-            <edge source="application.phases.Phase1" target="application.phases.Phase">
-              <point x="0.0" y="-26.0" />
-              <point x="337.5" y="1444.0" />
-              <point x="289.5" y="1444.0" />
-              <point x="91.0" y="59.5" />
-            </edge>
-            <edge source="application.persons.Participant" target="application.architecture.visualdisplay.IVisualDisplayListener">
-              <point x="0.0" y="-59.5" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="application.architecture.sectors.subsectors.IndoorSector" target="application.architecture.sectors.Sector">
-              <point x="0.0" y="-37.5" />
-              <point x="583.5" y="425.0" />
-              <point x="623.5" y="425.0" />
-              <point x="-81.0" y="104.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5312686122692077" x="800.2466367713007" y="689.5000000000002" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://JAVA/" />
   </component>
 </project>

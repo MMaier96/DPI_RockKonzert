@@ -2,6 +2,7 @@ package application;
 
 import application.concert.Concert;
 import data.CombineNamesGenerator;
+import data.ParticipantTicketGenerator;
 
 import static application.logger.Logger.*;
 

@@ -8,6 +8,7 @@ public interface IArea {
 	
 	String getName();
 	ISector getSectorByName(String name);
+	ISector getSectorByIndex(int index);
 	
 	void removeSector(ISector sector);
 

@@ -1,3 +1,8 @@
 # ignore all class files
 *.class
 /bin/
+
+# ignore data files
+participants_tickets_1.csv
+participants_tickets_2.csv
+participants_tickets_3.csv

@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import application.architecture.areas.IArea;
 import application.architecture.areas.IWaitingArea;
+import application.architecture.areas.subareas.CarWaitingArea;
 import application.architecture.areas.subareas.IndoorArea;
 import application.architecture.areas.subareas.OutdoorArea;
+import application.architecture.areas.subareas.PublicTransportationWaitingArea;
 import application.config.AppConfig;
 
 import static application.logger.Logger.*;
@@ -25,11 +27,25 @@ public class Stadion implements ILocation {
 		waitingAreas = new ArrayList<IWaitingArea>();
 		
 
-		printMessage("Area creation started!");
+		printMessage("Area/Sector/Seat creation started!");
 		
 		createAreas();
 		
 		createSectorsOfAreas();
+		
+		createWaitingAreas();
+	}
+
+	private void createWaitingAreas() {
+		printInfo("Creating car waitingAreas ...");
+		for (int i = 0; i < AppConfig.instance.amountCarWaitingAreas; i++) {
+			waitingAreas.add(new CarWaitingArea());
+		}
+		
+		printInfo("Creating public transportation waitingAreas ...");
+		for (int i = 0; i < AppConfig.instance.amountPublicTransportationWaitingAreas; i++) {
+			waitingAreas.add(new PublicTransportationWaitingArea());
+		}
 	}
 
 	private void createSectorsOfAreas() {
@@ -41,12 +57,12 @@ public class Stadion implements ILocation {
 
 	private void createAreas() {
 		int charindex = 65;
-		printInfo("creating indoor areas ...");
+		printInfo("Creating indoor areas ...");
 		for (int i = 0; i < AppConfig.instance.amountIndoorAreas; i++) {
 			areas.add(new IndoorArea((char) charindex++  + ""));
 		}
 		
-		printInfo("creating outdoor areas ...");
+		printInfo("Creating outdoor areas ...");
 		for (int i = 0; i < AppConfig.instance.amountOutdoorAreas; i++) {
 			areas.add(new OutdoorArea((char) charindex++  + ""));
 		}
@@ -69,6 +85,14 @@ public class Stadion implements ILocation {
 		waitingAreas.add(waitingArea);
 	}
 
+	public ArrayList<IWaitingArea> getCarWaitingAreas(){
+		return (ArrayList<IWaitingArea>) waitingAreas.subList(0, AppConfig.instance.amountCarWaitingAreas);
+	}
+	
+	public ArrayList<IWaitingArea> getPublicTransportationWaitingAreas(){
+		return (ArrayList<IWaitingArea>) waitingAreas.subList(0, AppConfig.instance.amountCarWaitingAreas);
+	}
+	
 	@Override
 	public IArea getAreaByName(String areaName) {
 		for (IArea iArea : areas) {

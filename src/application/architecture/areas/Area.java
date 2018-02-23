@@ -26,6 +26,7 @@ public abstract class Area implements IArea {
 		return name;
 	}
 
+	
 	@Override
 	public ISector getSectorByName(String name) {
 		for (ISector iSector : sectors) {
@@ -46,5 +47,11 @@ public abstract class Area implements IArea {
 	@Override
 	public String toString() {
 		return name;
+	}
+
+
+	@Override
+	public ISector getSectorByIndex(int index) {
+		return sectors.get(index-1);
 	}
 }

@@ -8,8 +8,8 @@ public class PublicTransportationWaitingArea extends WaitingArea{
 
 	private WaitingAreaTypes waitingAreaType;
 
-	public PublicTransportationWaitingArea(VisualDisplay visualDisplay) {
-		super(visualDisplay);
+	public PublicTransportationWaitingArea() {
+		super();
 		this.waitingAreaType = WaitingAreaTypes.PUBLIC_TRANSPORTATION;
 	}
 
