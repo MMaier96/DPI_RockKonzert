@@ -46,7 +46,7 @@
  >  * car: 2 waiting areas
  >
  > The start of the simulation the CSV file, with the assigned tickets to the participants, will be splitted into 3 different CSV files for each phase.
- > Each CSV file should match the capacity of the corresponding phase and all sectors in the area should be distributed equally.
+ > Each CSV file should match the capacity of the corresponding phase and all sectors in the area should be distributed equally. Each sector got a visual display which displays the actual phase and notify the participants to go to their seats.
  >
  > The stadion got 6 entrances:
  > * 1: A
