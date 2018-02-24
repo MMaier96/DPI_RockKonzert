@@ -1,11 +1,11 @@
 package application.phases;
 
-public abstract class Phase implements IPhase{
+public abstract class Phase implements IPhase {
 
 	private int id;
 	private double indoorCapacity;
 	private double outdoorCapacity;
-	
+
 	public Phase(int id, double indoor, double outdoor) {
 		this.id = id;
 		this.indoorCapacity = indoor;
@@ -36,7 +36,7 @@ public abstract class Phase implements IPhase{
 	public void setOutdoorCapacity(double capacity) {
 		this.outdoorCapacity = capacity;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Phase" + String.format("%02d", id);

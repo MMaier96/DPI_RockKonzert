@@ -2,7 +2,7 @@ package application.config;
 
 public enum AppConfig {
 	instance;
-	
+
 	public int amountIndoorDrones = 1;
 	public int amountOutdoorDrones = 4;
 	public int amountParticipants = 70000;
@@ -16,6 +16,4 @@ public enum AppConfig {
 	public int amountPublicTransportationWaitingAreas = 8;
 	public int indoorSeats = amountIndoorAreas * amountIndoorSectorsPerArea * amountIndoorSeatsPerSector; // 10.000
 	public int outdoorSeats = amountOutdoorAreas * amountOutdoorSectorsPerArea * amountOutdoorSeatsPerSector; // 60.000
-	
-	
 }

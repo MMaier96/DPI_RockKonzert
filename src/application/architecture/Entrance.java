@@ -17,24 +17,20 @@ public class Entrance {
 		}
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void addAreaToEntrance(IArea area) {
+		entranceToAreas.add(area);
 	}
 
 	public ArrayList<IArea> getEntranceToAreas() {
 		return entranceToAreas;
 	}
 
-	public void setEntranceToAreas(ArrayList<IArea> entranceToAreas) {
-		this.entranceToAreas = entranceToAreas;
+	public String getName() {
+		return name;
 	}
 
-	public void addAreaToEntrance(IArea area) {
-		entranceToAreas.add(area);
+	public boolean isAreaReachable(IArea area) {
+		return entranceToAreas.contains(area);
 	}
 
 	public void removeAreaToEntrance(IArea area) {
@@ -43,8 +39,12 @@ public class Entrance {
 		}
 	}
 
-	public boolean isAreaReachable(IArea area) {
-		return entranceToAreas.contains(area);
+	public void setEntranceToAreas(ArrayList<IArea> entranceToAreas) {
+		this.entranceToAreas = entranceToAreas;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

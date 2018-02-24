@@ -5,12 +5,17 @@ import application.drones.IDrone;
 
 public interface IConcertMediator {
 
-		void registerDrone(IDrone drone);
-		void setCommand(IDroneCommand command);
-		void executeActualCommand();
-		
-		void addConcertMediatorListener(IConcertMediatorListener listener);
-		void removeConcertMediatorListener(IConcertMediatorListener listener);
-		void notifyListeners();
-		void startManaging();
+	void addConcertMediatorListener(IConcertMediatorListener listener);
+
+	void executeActualCommand();
+
+	void notifyListeners();
+
+	void registerDrone(IDrone drone);
+
+	void removeConcertMediatorListener(IConcertMediatorListener listener);
+
+	void setCommand(IDroneCommand command);
+
+	void startManaging();
 }

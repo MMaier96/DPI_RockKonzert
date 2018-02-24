@@ -4,15 +4,16 @@ import static application.logger.Logger.*;
 
 import application.drones.subdrones.IndoorDrone;
 import application.drones.subdrones.OutdoorDrone;
-public class DroneCommandNext extends DroneCommand{
+
+public class DroneCommandNext extends DroneCommand {
 
 	@Override
 	public void execute() {
-		drone.setCurrentAreaIndex(drone.getCurrentAreaIndex()+1);
+		drone.setCurrentAreaIndex(drone.getCurrentAreaIndex() + 1);
 		if (drone instanceof IndoorDrone && drone.getCurrentAreaIndex() >= 1) {
 			return;
 		}
-		
+
 		if (drone instanceof OutdoorDrone && drone.getCurrentAreaIndex() >= 4) {
 			return;
 		}

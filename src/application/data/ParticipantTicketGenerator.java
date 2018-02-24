@@ -1,14 +1,10 @@
-package data;
+package application.data;
 
 import java.util.ArrayList;
 
 public class ParticipantTicketGenerator {
 	private ArrayList<String> tickets;
 	private int areaChar = 65;
-
-	public ArrayList<String> getTicketList() {
-		return tickets;
-	}
 
 	public ParticipantTicketGenerator() {
 		tickets = new ArrayList<String>();
@@ -17,6 +13,17 @@ public class ParticipantTicketGenerator {
 	public void create() {
 		createIndoorTickets();
 		createOutdoorTickets();
+	}
+
+	private void createIndoorTickets() {
+		for (int area = 0; area < 1; area++) {
+			for (int sector = 1; sector <= 10; sector++) {
+				for (int seat = 1; seat <= 1000; seat++) {
+					tickets.add((char) areaChar + "," + sector + "," + seat);
+				}
+			}
+			areaChar++;
+		}
 	}
 
 	private void createOutdoorTickets() {
@@ -30,14 +37,7 @@ public class ParticipantTicketGenerator {
 		}
 	}
 
-	private void createIndoorTickets() {
-		for (int area = 0; area < 1; area++) {
-			for (int sector = 1; sector <= 10; sector++) {
-				for (int seat = 1; seat <= 1000; seat++) {
-					tickets.add((char) areaChar + "," + sector + "," + seat);
-				}
-			}
-			areaChar++;
-		}
+	public ArrayList<String> getTicketList() {
+		return tickets;
 	}
 }

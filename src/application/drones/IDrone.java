@@ -8,22 +8,35 @@ import application.architecture.sectors.ISector;
 import application.architecture.sectors.Seat;
 
 public interface IDrone {
-	void addListener(IDroneListener droneListener);
-	void removeListener(IDroneListener droneListener);
-	void notifyListeners();
-	void setListeners(ArrayList<IDroneListener> listeners);
-	ArrayList<IDroneListener> getListeners();
-	int getId();
-	void setId(int id);
-	LocationType getType();
-	void setType(LocationType type);
-	
-	void setCurrentAreaIndex(int index);
-	int getCurrentAreaIndex();
 	void addEmptySeats(IArea currentArea, ISector currentSector, ArrayList<Seat> emptySeats);
-	void setFinishedCollecting(boolean finishedCollecting);
-	boolean isFinishedCollecting();
-	
-	void resetResults();
+
+	void addListener(IDroneListener droneListener);
+
+	int getCurrentAreaIndex();
+
+	int getId();
+
+	ArrayList<IDroneListener> getListeners();
+
 	ArrayList<String> getResultList();
+
+	LocationType getType();
+
+	boolean isFinishedCollecting();
+
+	void notifyListeners();
+
+	void removeListener(IDroneListener droneListener);
+
+	void resetResults();
+
+	void setCurrentAreaIndex(int index);
+
+	void setFinishedCollecting(boolean finishedCollecting);
+
+	void setId(int id);
+
+	void setListeners(ArrayList<IDroneListener> listeners);
+
+	void setType(LocationType type);
 }

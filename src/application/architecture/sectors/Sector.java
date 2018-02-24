@@ -10,24 +10,33 @@ public abstract class Sector implements ISector {
 	protected int seatsAmount;
 	protected int sectorId;
 	protected IArea relatedArea;
-	
-	
+
 	public Sector(int seatsAmount, IArea area, int id) {
-		this.relatedArea = area;	
+		this.relatedArea = area;
 		this.seatsAmount = seatsAmount;
 		this.sectorId = id;
 		this.seats = new ArrayList<Seat>(seatsAmount);
-		
+
 		createSeats();
 	}
-	
 
 	private void createSeats() {
 		for (int i = 1; i <= seatsAmount; i++) {
 			seats.add(new Seat(i));
 		}
 	}
-	
+
+	@Override
+	public ArrayList<Seat> getEmptySeats() {
+		ArrayList<Seat> emptySeats = new ArrayList<Seat>();
+		for (Seat seat : seats) {
+			if (seat.getSquatter() == null) {
+				emptySeats.add(seat);
+			}
+		}
+		return emptySeats;
+	}
+
 	@Override
 	public IArea getRelatedArea() {
 		return relatedArea;
@@ -69,20 +78,9 @@ public abstract class Sector implements ISector {
 	public void setSectorId(int id) {
 		sectorId = id;
 	}
-	
+
 	@Override
 	public String toString() {
 		return getSectorName();
-	}
-	
-	@Override
-	public ArrayList<Seat> getEmptySeats() {
-		ArrayList<Seat> emptySeats = new ArrayList<Seat>();
-		for (Seat seat : seats) {
-			if (seat.getSquatter() == null) {
-				emptySeats.add(seat);
-			}
-		}
-		return emptySeats;
 	}
 }

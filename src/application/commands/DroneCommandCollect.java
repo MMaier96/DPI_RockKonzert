@@ -32,7 +32,7 @@ public class DroneCommandCollect extends DroneCommand {
 			for (int i = 0; i < AppConfig.instance.amountIndoorSectorsPerArea; i++) {
 				ISector currentSector = currentArea.getSectorByIndex(i);
 				ArrayList<Seat> emptySeats = currentSector.getEmptySeats();
-				drone.addEmptySeats(currentArea,currentSector,emptySeats);				
+				drone.addEmptySeats(currentArea, currentSector, emptySeats);
 			}
 		} else if (drone instanceof OutdoorDrone) {
 			if (drone.isFinishedCollecting()) {
@@ -40,17 +40,18 @@ public class DroneCommandCollect extends DroneCommand {
 			}
 			int currentAreaIndex = drone.getCurrentAreaIndex();
 			ArrayList<IArea> outdoorAreas = ((OutdoorDrone) drone).getOutdoorAreas();
-			if (currentAreaIndex > (AppConfig.instance.amountOutdoorAreas / AppConfig.instance.amountOutdoorDrones)-1) {
+			if (currentAreaIndex > (AppConfig.instance.amountOutdoorAreas / AppConfig.instance.amountOutdoorDrones)
+					- 1) {
 				drone.setFinishedCollecting(true);
 				drone.notifyListeners();
 				return;
 			}
 			printInfo("Drone #" + drone.getId() + " starts collecting!");
-			IArea currentArea = outdoorAreas.get((4*(drone.getId()-1)) + currentAreaIndex);
+			IArea currentArea = outdoorAreas.get((4 * (drone.getId() - 1)) + currentAreaIndex);
 			for (int i = 0; i < AppConfig.instance.amountOutdoorSectorsPerArea; i++) {
 				ISector currentSector = currentArea.getSectorByIndex(i);
 				ArrayList<Seat> emptySeats = currentSector.getEmptySeats();
-				drone.addEmptySeats(currentArea,currentSector,emptySeats);				
+				drone.addEmptySeats(currentArea, currentSector, emptySeats);
 			}
 		}
 
@@ -59,7 +60,7 @@ public class DroneCommandCollect extends DroneCommand {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 		printInfo("Drone #" + drone.getId() + " finished collecting!");
 	}
 

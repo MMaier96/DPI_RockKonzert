@@ -1,4 +1,4 @@
-package data;
+package application.data;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -54,54 +54,6 @@ public class CombineNamesGenerator {
 		writeToFile(combinedNamesFile3, 0.3, 0.2);
 	}
 
-	private void writeToFile(File file, double indoorCapacity, double outdoorCapacity) {
-		PrintWriter output = null;
-		int indoorCounter = (int) ((double) AppConfig.instance.indoorSeats * indoorCapacity);
-		int outdoorCounter = (int) ((double) AppConfig.instance.outdoorSeats * outdoorCapacity);
-		StringBuilder builder = new StringBuilder();
-		String ticket = "";
-
-		try {
-			output = new PrintWriter(file);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		int randomTicketNumber = 0;
-
-		// indoor
-		do {
-			randomTicketNumber = randomGemerator.nextInt(ticketList.size());
-			ticket = ticketList.get(randomTicketNumber);
-			if (ticket.charAt(0) == 65) { // indoor
-				if (indoorCounter > 0) {
-					ticketList.remove(randomTicketNumber);
-
-					builder.append(surnames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants))).append(",")
-							.append(forenames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants))).append(",")
-							.append(ticket).append("\n");
-					indoorCounter--;
-				}
-				continue;
-			}
-
-			if (ticket.charAt(0) > 65 && ticket.charAt(0) < 82) { // outdoor
-				if (outdoorCounter > 0) {
-					ticketList.remove(randomTicketNumber);
-
-					builder.append(surnames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants))).append(",")
-							.append(forenames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants))).append(",")
-							.append(ticket).append("\n");
-					outdoorCounter--;
-				}
-				continue;
-			}
-		} while ((indoorCounter + outdoorCounter) > 0);
-
-		output.write(builder.toString());
-		output.close();
-	}
-
 	private void readData() {
 		Scanner inputForenames = null;
 		Scanner inputSurnames = null;
@@ -129,6 +81,11 @@ public class CombineNamesGenerator {
 		inputSurnames.close();
 	}
 
+	private void readTickets() {
+		ticketGenerator.create();
+		ticketList = ticketGenerator.getTicketList();
+	}
+
 	public void start() {
 		printInfo("Reading data from the csv files ... ");
 		readData();
@@ -140,8 +97,53 @@ public class CombineNamesGenerator {
 		exportData();
 	}
 
-	private void readTickets() {
-		ticketGenerator.create();
-		ticketList = ticketGenerator.getTicketList();
+	private void writeToFile(File file, double indoorCapacity, double outdoorCapacity) {
+		PrintWriter output = null;
+		int indoorCounter = (int) ((double) AppConfig.instance.indoorSeats * indoorCapacity);
+		int outdoorCounter = (int) ((double) AppConfig.instance.outdoorSeats * outdoorCapacity);
+		StringBuilder builder = new StringBuilder();
+		String ticket = "";
+
+		try {
+			output = new PrintWriter(file);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		int randomTicketNumber = 0;
+
+		// indoor
+		do {
+			randomTicketNumber = randomGemerator.nextInt(ticketList.size());
+			ticket = ticketList.get(randomTicketNumber);
+			if (ticket.charAt(0) == 65) { // indoor
+				if (indoorCounter > 0) {
+					ticketList.remove(randomTicketNumber);
+
+					builder.append(surnames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants)))
+							.append(",")
+							.append(forenames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants)))
+							.append(",").append(ticket).append("\n");
+					indoorCounter--;
+				}
+				continue;
+			}
+
+			if (ticket.charAt(0) > 65 && ticket.charAt(0) < 82) { // outdoor
+				if (outdoorCounter > 0) {
+					ticketList.remove(randomTicketNumber);
+
+					builder.append(surnames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants)))
+							.append(",")
+							.append(forenames.get(randomGemerator.nextInt(AppConfig.instance.amountParticipants)))
+							.append(",").append(ticket).append("\n");
+					outdoorCounter--;
+				}
+				continue;
+			}
+		} while ((indoorCounter + outdoorCounter) > 0);
+
+		output.write(builder.toString());
+		output.close();
 	}
 }

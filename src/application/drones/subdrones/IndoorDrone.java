@@ -18,22 +18,6 @@ public class IndoorDrone extends Drone {
 	}
 
 	@Override
-	public LocationType getType() {
-		return type;
-	}
-
-	@Override
-	public void setType(LocationType type) {
-		this.type = type;
-	}
-
-	@Override
-	public void setCurrentAreaIndex(int index) {
-		areaIndex = index;
-		
-	}
-
-	@Override
 	public int getCurrentAreaIndex() {
 		return areaIndex;
 	}
@@ -42,7 +26,23 @@ public class IndoorDrone extends Drone {
 		return indoorAreas;
 	}
 
+	@Override
+	public LocationType getType() {
+		return type;
+	}
+
+	@Override
+	public void setCurrentAreaIndex(int index) {
+		areaIndex = index;
+
+	}
+
 	public void setIndoorAreas(ArrayList<IArea> indoorAreas) {
 		this.indoorAreas = indoorAreas;
+	}
+
+	@Override
+	public void setType(LocationType type) {
+		this.type = type;
 	}
 }

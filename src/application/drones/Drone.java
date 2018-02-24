@@ -24,43 +24,6 @@ public abstract class Drone implements IDrone {
 	}
 
 	@Override
-	public void addListener(IDroneListener droneListener) {
-		listeners.add(droneListener);
-	}
-
-	@Override
-	public void removeListener(IDroneListener droneListener) {
-		if (listeners.contains(droneListener)) {
-			listeners.remove(droneListener);
-		}
-	}
-
-	@Override
-	public ArrayList<IDroneListener> getListeners() {
-		return listeners;
-	}
-
-	@Override
-	public void setListeners(ArrayList<IDroneListener> listeners) {
-		this.listeners = listeners;
-	}
-
-	@Override
-	public void notifyListeners() {
-		for (IDroneListener iDroneListener : listeners) {
-			iDroneListener.handleNotification();
-		}
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	@Override
 	public void addEmptySeats(IArea currentArea, ISector currentSector, ArrayList<Seat> emptySeats) {
 		int firstNumber = 0;
 		int lastNumber = 0;
@@ -105,8 +68,48 @@ public abstract class Drone implements IDrone {
 	}
 
 	@Override
+	public void addListener(IDroneListener droneListener) {
+		listeners.add(droneListener);
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	@Override
+	public ArrayList<IDroneListener> getListeners() {
+		return listeners;
+	}
+
+	@Override
+	public ArrayList<String> getResultList() {
+		return seatsResult;
+	}
+
+	@Override
 	public boolean isFinishedCollecting() {
 		return finishedCollecting;
+	}
+
+	@Override
+	public void notifyListeners() {
+		for (IDroneListener iDroneListener : listeners) {
+			iDroneListener.handleNotification();
+		}
+	}
+
+	@Override
+	public void removeListener(IDroneListener droneListener) {
+		if (listeners.contains(droneListener)) {
+			listeners.remove(droneListener);
+		}
+	}
+
+	@Override
+	public void resetResults() {
+		collectedSeats.clear();
+		seatsResult.clear();
+
 	}
 
 	@Override
@@ -114,16 +117,13 @@ public abstract class Drone implements IDrone {
 		this.finishedCollecting = finishedCollecting;
 	}
 
-	@Override
-	public ArrayList<String> getResultList() {
-		return seatsResult;
+	public void setId(int id) {
+		this.id = id;
 	}
-	
+
 	@Override
-	public void resetResults() {
-		collectedSeats.clear();
-		seatsResult.clear();
-		
+	public void setListeners(ArrayList<IDroneListener> listeners) {
+		this.listeners = listeners;
 	}
-	
+
 }

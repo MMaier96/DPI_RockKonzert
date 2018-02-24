@@ -47,37 +47,13 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 	}
 
 	@Override
-	public void registerDrone(IDrone drone) {
-		drones.add(drone);
-	}
-
-	@Override
-	public void setCommand(IDroneCommand command) {
-		this.command = command;
-	}
-
-	@Override
-	public void executeActualCommand() {
-		command.execute();
-	}
-
-	@Override
 	public void addConcertMediatorListener(IConcertMediatorListener listener) {
 		displays.add(listener);
 	}
 
 	@Override
-	public void removeConcertMediatorListener(IConcertMediatorListener listener) {
-		if (displays.contains(listener)) {
-			displays.remove(listener);
-		}
-	}
-
-	@Override
-	public void notifyListeners() {
-		for (IConcertMediatorListener iConcertMediatorListener : displays) {
-			iConcertMediatorListener.handleNotification();
-		}
+	public void executeActualCommand() {
+		command.execute();
 	}
 
 	@Override
@@ -93,15 +69,39 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 	}
 
 	@Override
+	public void notifyListeners() {
+		for (IConcertMediatorListener iConcertMediatorListener : displays) {
+			iConcertMediatorListener.handleNotification();
+		}
+	}
+
+	@Override
+	public void registerDrone(IDrone drone) {
+		drones.add(drone);
+	}
+
+	@Override
+	public void removeConcertMediatorListener(IConcertMediatorListener listener) {
+		if (displays.contains(listener)) {
+			displays.remove(listener);
+		}
+	}
+
+	@Override
+	public void setCommand(IDroneCommand command) {
+		this.command = command;
+	}
+
+	@Override
 	public void startManaging() {
-		//reset
+		// reset
 		dronesFinished = 0;
 		for (IDrone iDrone : drones) {
 			iDrone.setCurrentAreaIndex(0);
 			iDrone.setFinishedCollecting(false);
 			iDrone.resetResults();
 		}
-		
+
 		concert.nextPhase();
 		for (IDrone iDrone : drones) {
 			command = new DroneCommandDepart();

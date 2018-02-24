@@ -9,13 +9,11 @@ public abstract class Area implements IArea {
 	protected ArrayList<ISector> sectors;
 	protected String name;
 
-	
 	public Area(String name) {
 		sectors = new ArrayList<ISector>();
 		this.name = name;
 	}
-	
-	
+
 	@Override
 	public void addSector(ISector sector) {
 		sectors.add(sector);
@@ -26,7 +24,11 @@ public abstract class Area implements IArea {
 		return name;
 	}
 
-	
+	@Override
+	public ISector getSectorByIndex(int index) {
+		return sectors.get(index);
+	}
+
 	@Override
 	public ISector getSectorByName(String name) {
 		for (ISector iSector : sectors) {
@@ -43,15 +45,9 @@ public abstract class Area implements IArea {
 			sectors.remove(sector);
 		}
 	}
-	
+
 	@Override
 	public String toString() {
 		return name;
-	}
-
-
-	@Override
-	public ISector getSectorByIndex(int index) {
-		return sectors.get(index);
 	}
 }

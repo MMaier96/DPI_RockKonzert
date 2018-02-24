@@ -1,7 +1,8 @@
 package application.commands;
+
 import static application.logger.Logger.*;
 
-public class DroneCommandDepart extends DroneCommand{
+public class DroneCommandDepart extends DroneCommand {
 
 	@Override
 	public void execute() {

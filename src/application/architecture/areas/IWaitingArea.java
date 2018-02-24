@@ -6,9 +6,14 @@ import application.persons.Participant;
 public interface IWaitingArea {
 
 	void addWaitingParticipant(Participant participant);
-	void removeWaitingParticipant(Participant participant);
-	void setVisualDisplay(VisualDisplay visualDisplay);
-	VisualDisplay getVisualDisplay();
+
 	int getParticipantsSize();
+
+	VisualDisplay getVisualDisplay();
+
+	void removeWaitingParticipant(Participant participant);
+
 	void resetParticipants();
+
+	void setVisualDisplay(VisualDisplay visualDisplay);
 }
