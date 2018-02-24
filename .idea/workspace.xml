@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0baddc11-1a55-49e1-a7ca-c6a58816f002" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0baddc11-1a55-49e1-a7ca-c6a58816f002" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,188 +20,212 @@
               <ID>JAVA</ID>
               <OriginalElement>application</OriginalElement>
               <nodes>
-                <node x="1681.0" y="66.5">application.drones.IDroneListener</node>
-                <node x="205.0" y="1488.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
-                <node x="912.0" y="1710.0">application.architecture.visualdisplay.VisualDisplay</node>
-                <node x="1344.0" y="1399.0">application.phases.Phase3</node>
-                <node x="729.5" y="670.0">application.drones.subdrones.OutdoorDrone</node>
-                <node x="1699.5" y="1061.0">application.architecture.sectors.Sector</node>
-                <node x="1580.0" y="1991.0">application.architecture.LocationType</node>
-                <node x="1894.0" y="1364.0">application.architecture.sectors.subsectors.IndoorSector</node>
-                <node x="1647.0" y="1364.0">application.architecture.sectors.subsectors.OutdoorSector</node>
-                <node x="77.0" y="0.0">application.architecture.ILocation</node>
-                <node x="1414.0" y="472.0">application.architecture.areas.subareas.OutdoorArea</node>
-                <node x="346.0" y="1991.0">application.architecture.sectors.ISector</node>
-                <node x="0.0" y="1991.0">application.architecture.Entrance</node>
-                <node x="0.0" y="1608.0">application.config.AppConfig</node>
-                <node x="1257.0" y="1207.0">application.phases.Phase</node>
-                <node x="84.75" y="1252.0">application.architecture.areas.WaitingArea</node>
-                <node x="707.0" y="1991.0">application.logger.Logger</node>
-                <node x="38.25" y="1061.0">application.architecture.areas.IWaitingArea</node>
-                <node x="695.0" y="0.0">application.drones.IDrone</node>
-                <node x="1483.0" y="1399.0">application.phases.Phase1</node>
-                <node x="1205.0" y="1399.0">application.phases.Phase2</node>
-                <node x="1703.25" y="235.0">application.persons.ConcertMediator</node>
-                <node x="698.5" y="323.0">application.drones.Drone</node>
-                <node x="1596.0" y="1835.0">application.commands.DroneCommandDepart</node>
-                <node x="1295.5" y="1061.0">application.phases.IPhase</node>
-                <node x="1413.0" y="1835.0">application.commands.DroneCommandNext</node>
-                <node x="0.0" y="1488.0">application.architecture.areas.subareas.CarWaitingArea</node>
-                <node x="1790.0" y="1835.0">application.commands.DroneCommandCollect</node>
-                <node x="928.5" y="670.0">application.drones.subdrones.IndoorDrone</node>
-                <node x="1228.0" y="1835.0">application.commands.DroneCommandLand</node>
-                <node x="1905.0" y="0.0">application.persons.IConcertMediator</node>
-                <node x="1232.0" y="213.0">application.architecture.areas.Area</node>
-                <node x="389.0" y="1710.0">application.persons.Participant</node>
-                <node x="526.0" y="1608.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
-                <node x="1519.25" y="1733.0">application.commands.DroneCommand</node>
-                <node x="1182.0" y="472.0">application.architecture.areas.subareas.IndoorArea</node>
-                <node x="1217.0" y="1991.0">application.architecture.areas.types.WaitingAreaTypes</node>
-                <node x="528.0" y="1061.0">application.concert.Concert</node>
-                <node x="1408.0" y="1991.0">application.tickets.Ticket</node>
-                <node x="1014.0" y="1991.0">application.architecture.sectors.Seat</node>
-                <node x="0.0" y="455.0">application.architecture.Stadion</node>
-                <node x="1506.25" y="1608.0">application.commands.IDroneCommand</node>
-                <node x="1747.0" y="1991.0">application.Application</node>
-                <node x="945.5" y="1608.0">application.persons.IConcertMediatorListener</node>
-                <node x="1259.5" y="0.0">application.architecture.areas.IArea</node>
+                <node x="1509.8890292553197" y="1403.5">application.drones.IDroneListener</node>
+                <node x="1802.1450132978725" y="1392.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
+                <node x="1622.5200132978725" y="648.5">application.architecture.visualdisplay.VisualDisplay</node>
+                <node x="0.0" y="2006.5">application.phases.Phase3</node>
+                <node x="4236.940972222223" y="2590.0">application.drones.subdrones.OutdoorDrone</node>
+                <node x="3761.9575132978725" y="615.0">application.architecture.sectors.Sector</node>
+                <node x="4200.351455378252" y="704.5">application.architecture.LocationType</node>
+                <node x="3769.9575132978725" y="1005.0">application.architecture.sectors.subsectors.IndoorSector</node>
+                <node x="4006.9575132978725" y="1005.0">application.architecture.sectors.subsectors.OutdoorSector</node>
+                <node x="3735.8325132978725" y="1227.0">application.architecture.ILocation</node>
+                <node x="3434.2075132978725" y="1380.5">application.architecture.areas.subareas.OutdoorArea</node>
+                <node x="3677.2075132978725" y="393.0">application.architecture.sectors.ISector</node>
+                <node x="2496.1450132978725" y="659.5">application.architecture.Entrance</node>
+                <node x="0.0" y="2989.0">application.config.AppConfig</node>
+                <node x="72.66666666666697" y="1358.5">application.phases.Phase</node>
+                <node x="1804.8950132978725" y="949.5">application.architecture.areas.WaitingArea</node>
+                <node x="389.0" y="2989.0">application.logger.Logger</node>
+                <node x="2896.7326388888887" y="671.0">application.architecture.areas.IWaitingArea</node>
+                <node x="1079.0923093971626" y="605.0">application.drones.IDrone</node>
+                <node x="278.0" y="2006.5">application.phases.Phase1</node>
+                <node x="139.0" y="2006.5">application.phases.Phase2</node>
+                <node x="927.342929964539" y="1873.0">application.persons.ConcertMediator</node>
+                <node x="1733.8265292553197" y="1884.0">application.drones.Drone</node>
+                <node x="999.7015292553197" y="1403.5">application.commands.DroneCommandDepart</node>
+                <node x="305.0" y="415.5">application.phases.IPhase</node>
+                <node x="1193.7015292553197" y="1403.5">application.commands.DroneCommandNext</node>
+                <node x="2451.1450132978725" y="1392.0">application.architecture.areas.subareas.CarWaitingArea</node>
+                <node x="803.7015292553197" y="1403.5">application.commands.DroneCommandCollect</node>
+                <node x="3185.9575132978725" y="2590.0">application.drones.subdrones.IndoorDrone</node>
+                <node x="618.7015292553197" y="1403.5">application.commands.DroneCommandLand</node>
+                <node x="2100.1450132978725" y="1337.0">application.persons.IConcertMediator</node>
+                <node x="3229.7326388888887" y="938.0">application.architecture.areas.Area</node>
+                <node x="3599.4029181442083" y="102.0">application.persons.Participant</node>
+                <node x="2897.173751477542" y="0.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
+                <node x="912.2277260638293" y="1016.5">application.commands.DroneCommand</node>
+                <node x="3202.2075132978725" y="1380.5">application.architecture.areas.subareas.IndoorArea</node>
+                <node x="2480.3950132978725" y="1005.5">application.architecture.areas.types.WaitingAreaTypes</node>
+                <node x="834.842929964539" y="2413.0">application.concert.Concert</node>
+                <node x="1913.5200132978725" y="704.5">application.tickets.Ticket</node>
+                <node x="4013.2075132978725" y="415.0">application.architecture.sectors.Seat</node>
+                <node x="2586.2075132978725" y="1752.0">application.architecture.Stadion</node>
+                <node x="745.3361258865255" y="704.0">application.commands.IDroneCommand</node>
+                <node x="1065.342929964539" y="2892.0">application.Application</node>
+                <node x="621.0458998226961" y="437.5">application.persons.IConcertMediatorListener</node>
+                <node x="2697.1945848108753" y="382.0">application.architecture.areas.IArea</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="application.architecture.Stadion" target="application.architecture.ILocation">
-                  <point x="0.0" y="-280.5" />
-                  <point x="0.0" y="202.5" />
+                  <point x="288.8888888888889" y="-280.5" />
+                  <point x="3200.096402186761" y="1732.0" />
+                  <point x="3859.8325132978725" y="1732.0" />
+                  <point x="-124.0" y="202.5" />
                 </edge>
                 <edge source="application.architecture.areas.subareas.PublicTransportationWaitingArea" target="application.architecture.areas.WaitingArea">
-                  <point x="0.0" y="-37.5" />
-                  <point x="344.0" y="1463.0" />
-                  <point x="285.0" y="1463.0" />
-                  <point x="66.75" y="93.0" />
+                  <point x="-69.5" y="-37.5" />
+                  <point x="-66.75" y="93.0" />
                 </edge>
                 <edge source="application.drones.subdrones.OutdoorDrone" target="application.drones.Drone">
-                  <point x="0.0" y="-37.5" />
-                  <point x="819.0" y="645.0" />
-                  <point x="807.25" y="645.0" />
-                  <point x="-108.75" y="148.5" />
+                  <point x="-44.75" y="-37.5" />
+                  <point x="4281.690972222223" y="2333.0" />
+                  <point x="2060.0765292553197" y="2333.0" />
+                  <point x="108.75" y="148.5" />
                 </edge>
                 <edge source="application.commands.DroneCommandCollect" target="application.commands.DroneCommand">
                   <point x="0.0" y="-26.0" />
-                  <point x="1878.0" y="1805.0" />
-                  <point x="1640.875" y="1805.0" />
-                  <point x="52.125" y="26.0" />
+                  <point x="891.7015292553197" y="1207.0" />
+                  <point x="964.3527260638293" y="1207.0" />
+                  <point x="-17.375" y="26.0" />
                 </edge>
                 <edge source="application.phases.Phase" target="application.phases.IPhase">
                   <point x="0.0" y="-71.0" />
-                  <point x="0.0" y="48.0" />
+                  <point x="219.16666666666697" y="585.0" />
+                  <point x="332.0" y="585.0" />
+                  <point x="-81.0" y="48.0" />
+                </edge>
+                <edge source="application.architecture.sectors.Sector" target="application.architecture.sectors.ISector">
+                  <point x="-45.5" y="-126.5" />
+                  <point x="3898.4575132978725" y="585.0" />
+                  <point x="3835.2075132978725" y="585.0" />
+                  <point x="0.0" y="70.5" />
                 </edge>
                 <edge source="application.commands.DroneCommandNext" target="application.commands.DroneCommand">
                   <point x="0.0" y="-26.0" />
-                  <point x="1494.5" y="1815.0" />
-                  <point x="1571.375" y="1815.0" />
-                  <point x="-17.375" y="26.0" />
+                  <point x="1275.2015292553197" y="1197.0" />
+                  <point x="1033.8527260638293" y="1197.0" />
+                  <point x="52.125" y="26.0" />
                 </edge>
                 <edge source="application.architecture.areas.subareas.OutdoorArea" target="application.architecture.areas.Area">
-                  <point x="0.0" y="-49.0" />
-                  <point x="1525.0" y="447.0" />
-                  <point x="1493.75" y="447.0" />
+                  <point x="-74.0" y="-49.0" />
+                  <point x="3471.2075132978725" y="1167.0" />
+                  <point x="3491.4826388888887" y="1167.0" />
                   <point x="87.25" y="104.5" />
                 </edge>
                 <edge source="application.architecture.areas.Area" target="application.architecture.areas.IArea">
                   <point x="0.0" y="-104.5" />
-                  <point x="0.0" y="81.5" />
+                  <point x="3404.2326388888887" y="585.0" />
+                  <point x="2902.994584810875" y="585.0" />
+                  <point x="58.799999999999955" y="81.5" />
                 </edge>
                 <edge source="application.persons.ConcertMediator" target="application.drones.IDroneListener">
-                  <point x="-111.75" y="-159.5" />
-                  <point x="1815.0" y="210.0" />
-                  <point x="1783.0" y="210.0" />
-                  <point x="0.0" y="26.0" />
+                  <point x="139.6875" y="-159.5" />
+                  <point x="1290.530429964539" y="1702.0" />
+                  <point x="1560.8890292553197" y="1702.0" />
+                  <point x="-51.0" y="26.0" />
                 </edge>
                 <edge source="application.drones.subdrones.IndoorDrone" target="application.drones.Drone">
-                  <point x="0.0" y="-37.5" />
-                  <point x="1013.0" y="645.0" />
-                  <point x="1024.75" y="645.0" />
-                  <point x="108.75" y="148.5" />
+                  <point x="-42.25" y="-37.5" />
+                  <point x="3228.2075132978725" y="2343.0" />
+                  <point x="1842.5765292553197" y="2343.0" />
+                  <point x="-108.75" y="148.5" />
                 </edge>
                 <edge source="application.commands.DroneCommandDepart" target="application.commands.DroneCommand">
                   <point x="0.0" y="-26.0" />
-                  <point x="1683.0" y="1815.0" />
-                  <point x="1606.125" y="1815.0" />
+                  <point x="1086.7015292553197" y="1207.0" />
+                  <point x="999.1027260638293" y="1207.0" />
                   <point x="17.375" y="26.0" />
                 </edge>
                 <edge source="application.phases.Phase1" target="application.phases.Phase">
                   <point x="0.0" y="-26.0" />
-                  <point x="1542.5" y="1374.0" />
-                  <point x="1501.1666666666667" y="1374.0" />
-                  <point x="97.66666666666669" y="71.0" />
+                  <point x="337.5" y="1732.0" />
+                  <point x="316.8333333333335" y="1732.0" />
+                  <point x="97.66666666666652" y="71.0" />
                 </edge>
                 <edge source="application.commands.DroneCommandLand" target="application.commands.DroneCommand">
                   <point x="0.0" y="-26.0" />
-                  <point x="1310.5" y="1805.0" />
-                  <point x="1536.625" y="1805.0" />
+                  <point x="701.2015292553197" y="1197.0" />
+                  <point x="929.6027260638293" y="1197.0" />
                   <point x="-52.125" y="26.0" />
                 </edge>
                 <edge source="application.persons.ConcertMediator" target="application.persons.IConcertMediator">
-                  <point x="111.75" y="-159.5" />
-                  <point x="2038.5" y="210.0" />
-                  <point x="2070.5" y="210.0" />
-                  <point x="0.0" y="92.5" />
+                  <point x="195.5625" y="-159.5" />
+                  <point x="1346.405429964539" y="1712.0" />
+                  <point x="2141.5200132978725" y="1712.0" />
+                  <point x="-124.125" y="92.5" />
                 </edge>
                 <edge source="application.architecture.areas.subareas.CarWaitingArea" target="application.architecture.areas.WaitingArea">
-                  <point x="0.0" y="-37.5" />
-                  <point x="92.5" y="1463.0" />
-                  <point x="151.5" y="1463.0" />
-                  <point x="-66.75" y="93.0" />
+                  <point x="-46.25" y="-37.5" />
+                  <point x="2497.3950132978725" y="1197.0" />
+                  <point x="2005.1450132978725" y="1197.0" />
+                  <point x="66.75" y="93.0" />
                 </edge>
                 <edge source="application.architecture.sectors.subsectors.OutdoorSector" target="application.architecture.sectors.Sector">
-                  <point x="0.0" y="-37.5" />
-                  <point x="1760.5" y="1339.0" />
-                  <point x="1790.5" y="1339.0" />
-                  <point x="-91.0" y="126.5" />
+                  <point x="-56.75" y="-37.5" />
+                  <point x="4063.7075132978725" y="898.0" />
+                  <point x="4034.9575132978725" y="898.0" />
+                  <point x="91.0" y="126.5" />
                 </edge>
                 <edge source="application.persons.Participant" target="application.architecture.visualdisplay.IVisualDisplayListener">
                   <point x="0.0" y="-115.0" />
-                  <point x="0.0" y="26.0" />
+                  <point x="3838.4029181442083" y="77.0" />
+                  <point x="3050.173751477542" y="77.0" />
+                  <point x="51.0" y="26.0" />
                 </edge>
                 <edge source="application.commands.DroneCommand" target="application.commands.IDroneCommand">
-                  <point x="0.0" y="-26.0" />
-                  <point x="0.0" y="37.5" />
+                  <point x="-34.75" y="-26.0" />
+                  <point x="946.9777260638293" y="918.0" />
+                  <point x="869.0861258865255" y="918.0" />
+                  <point x="41.25" y="37.5" />
                 </edge>
                 <edge source="application.phases.Phase2" target="application.phases.Phase">
                   <point x="0.0" y="-26.0" />
-                  <point x="1264.5" y="1374.0" />
-                  <point x="1305.8333333333333" y="1374.0" />
-                  <point x="-97.66666666666667" y="71.0" />
+                  <point x="198.5" y="1732.0" />
+                  <point x="219.16666666666697" y="1732.0" />
+                  <point x="0.0" y="71.0" />
                 </edge>
                 <edge source="application.architecture.areas.subareas.IndoorArea" target="application.architecture.areas.Area">
-                  <point x="0.0" y="-49.0" />
-                  <point x="1288.0" y="447.0" />
-                  <point x="1319.25" y="447.0" />
+                  <point x="-70.66666666666674" y="-49.0" />
+                  <point x="3237.5408466312056" y="1167.0" />
+                  <point x="3316.9826388888887" y="1167.0" />
                   <point x="-87.25" y="104.5" />
                 </edge>
                 <edge source="application.architecture.sectors.subsectors.IndoorSector" target="application.architecture.sectors.Sector">
-                  <point x="0.0" y="-37.5" />
-                  <point x="2002.5" y="1339.0" />
-                  <point x="1972.5" y="1339.0" />
-                  <point x="91.0" y="126.5" />
+                  <point x="-54.25" y="-37.5" />
+                  <point x="3824.2075132978725" y="918.0" />
+                  <point x="3852.9575132978725" y="918.0" />
+                  <point x="-91.0" y="126.5" />
                 </edge>
                 <edge source="application.drones.Drone" target="application.drones.IDrone">
                   <point x="0.0" y="-148.5" />
-                  <point x="0.0" y="136.5" />
+                  <point x="1951.3265292553197" y="1692.0" />
+                  <point x="1724.3890292553197" y="1692.0" />
+                  <point x="1724.3890292553197" y="918.0" />
+                  <point x="1447.425642730496" y="918.0" />
+                  <point x="147.33333333333348" y="136.5" />
                 </edge>
                 <edge source="application.architecture.visualdisplay.VisualDisplay" target="application.persons.IConcertMediatorListener">
                   <point x="0.0" y="-93.0" />
-                  <point x="0.0" y="26.0" />
+                  <point x="1758.0200132978725" y="565.0" />
+                  <point x="774.0458998226961" y="565.0" />
+                  <point x="51.0" y="26.0" />
                 </edge>
                 <edge source="application.architecture.areas.WaitingArea" target="application.architecture.areas.IWaitingArea">
-                  <point x="0.0" y="-93.0" />
-                  <point x="0.0" y="70.5" />
+                  <point x="100.125" y="-93.0" />
+                  <point x="2038.5200132978725" y="918.0" />
+                  <point x="2986.7326388888887" y="918.0" />
+                  <point x="-90.0" y="70.5" />
                 </edge>
                 <edge source="application.phases.Phase3" target="application.phases.Phase">
                   <point x="0.0" y="-26.0" />
-                  <point x="0.0" y="71.0" />
+                  <point x="59.5" y="1732.0" />
+                  <point x="121.5" y="1732.0" />
+                  <point x="-97.66666666666674" y="71.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.5666666666666667" x="1118.0" y="1077.5" />
+              <settings layout="Hierarchic Group" zoom="1.0" x="1302.0" y="602.5" />
               <SelectedNodes />
               <Categories>
                 <Category>Fields</Category>
@@ -213,6 +235,26 @@
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/architecture/sectors/Sector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/architecture/sectors/ISector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -279,6 +321,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPI_Rockkonzert" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPI_RockKonzert" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sectors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -767,15 +827,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519294934044</updated>
-      <workItem from="1519294939454" duration="2122000" />
+      <workItem from="1519294939454" duration="2440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2122000" />
+    <option name="totallyTimeSpent" value="2440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -788,7 +848,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33262935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -868,194 +928,234 @@
       </provider>
     </entry>
     <entry file="uml://JAVA/" />
+    <entry file="file://$PROJECT_DIR$/src/application/architecture/sectors/Sector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/architecture/sectors/ISector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://JAVA/application">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement>application</OriginalElement>
           <nodes>
-            <node x="1681.0" y="66.5">application.drones.IDroneListener</node>
-            <node x="205.0" y="1488.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
-            <node x="912.0" y="1710.0">application.architecture.visualdisplay.VisualDisplay</node>
-            <node x="1344.0" y="1399.0">application.phases.Phase3</node>
-            <node x="729.5" y="670.0">application.drones.subdrones.OutdoorDrone</node>
-            <node x="1699.5" y="1061.0">application.architecture.sectors.Sector</node>
-            <node x="1580.0" y="1991.0">application.architecture.LocationType</node>
-            <node x="1894.0" y="1364.0">application.architecture.sectors.subsectors.IndoorSector</node>
-            <node x="1647.0" y="1364.0">application.architecture.sectors.subsectors.OutdoorSector</node>
-            <node x="77.0" y="0.0">application.architecture.ILocation</node>
-            <node x="1414.0" y="472.0">application.architecture.areas.subareas.OutdoorArea</node>
-            <node x="346.0" y="1991.0">application.architecture.sectors.ISector</node>
-            <node x="0.0" y="1991.0">application.architecture.Entrance</node>
-            <node x="0.0" y="1608.0">application.config.AppConfig</node>
-            <node x="1257.0" y="1207.0">application.phases.Phase</node>
-            <node x="84.75" y="1252.0">application.architecture.areas.WaitingArea</node>
-            <node x="707.0" y="1991.0">application.logger.Logger</node>
-            <node x="38.25" y="1061.0">application.architecture.areas.IWaitingArea</node>
-            <node x="695.0" y="0.0">application.drones.IDrone</node>
-            <node x="1483.0" y="1399.0">application.phases.Phase1</node>
-            <node x="1205.0" y="1399.0">application.phases.Phase2</node>
-            <node x="1703.25" y="235.0">application.persons.ConcertMediator</node>
-            <node x="698.5" y="323.0">application.drones.Drone</node>
-            <node x="1596.0" y="1835.0">application.commands.DroneCommandDepart</node>
-            <node x="1295.5" y="1061.0">application.phases.IPhase</node>
-            <node x="1413.0" y="1835.0">application.commands.DroneCommandNext</node>
-            <node x="0.0" y="1488.0">application.architecture.areas.subareas.CarWaitingArea</node>
-            <node x="1790.0" y="1835.0">application.commands.DroneCommandCollect</node>
-            <node x="928.5" y="670.0">application.drones.subdrones.IndoorDrone</node>
-            <node x="1228.0" y="1835.0">application.commands.DroneCommandLand</node>
-            <node x="1905.0" y="0.0">application.persons.IConcertMediator</node>
-            <node x="1232.0" y="213.0">application.architecture.areas.Area</node>
-            <node x="389.0" y="1710.0">application.persons.Participant</node>
-            <node x="526.0" y="1608.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
-            <node x="1519.25" y="1733.0">application.commands.DroneCommand</node>
-            <node x="1182.0" y="472.0">application.architecture.areas.subareas.IndoorArea</node>
-            <node x="1217.0" y="1991.0">application.architecture.areas.types.WaitingAreaTypes</node>
-            <node x="528.0" y="1061.0">application.concert.Concert</node>
-            <node x="1408.0" y="1991.0">application.tickets.Ticket</node>
-            <node x="1014.0" y="1991.0">application.architecture.sectors.Seat</node>
-            <node x="0.0" y="455.0">application.architecture.Stadion</node>
-            <node x="1506.25" y="1608.0">application.commands.IDroneCommand</node>
-            <node x="1747.0" y="1991.0">application.Application</node>
-            <node x="945.5" y="1608.0">application.persons.IConcertMediatorListener</node>
-            <node x="1259.5" y="0.0">application.architecture.areas.IArea</node>
+            <node x="1509.8890292553197" y="1403.5">application.drones.IDroneListener</node>
+            <node x="1802.1450132978725" y="1392.0">application.architecture.areas.subareas.PublicTransportationWaitingArea</node>
+            <node x="1622.5200132978725" y="648.5">application.architecture.visualdisplay.VisualDisplay</node>
+            <node x="0.0" y="2006.5">application.phases.Phase3</node>
+            <node x="4236.940972222223" y="2590.0">application.drones.subdrones.OutdoorDrone</node>
+            <node x="3761.9575132978725" y="615.0">application.architecture.sectors.Sector</node>
+            <node x="4200.351455378252" y="704.5">application.architecture.LocationType</node>
+            <node x="3769.9575132978725" y="1005.0">application.architecture.sectors.subsectors.IndoorSector</node>
+            <node x="4006.9575132978725" y="1005.0">application.architecture.sectors.subsectors.OutdoorSector</node>
+            <node x="3735.8325132978725" y="1227.0">application.architecture.ILocation</node>
+            <node x="3434.2075132978725" y="1380.5">application.architecture.areas.subareas.OutdoorArea</node>
+            <node x="3677.2075132978725" y="393.0">application.architecture.sectors.ISector</node>
+            <node x="2496.1450132978725" y="659.5">application.architecture.Entrance</node>
+            <node x="0.0" y="2989.0">application.config.AppConfig</node>
+            <node x="72.66666666666697" y="1358.5">application.phases.Phase</node>
+            <node x="1804.8950132978725" y="949.5">application.architecture.areas.WaitingArea</node>
+            <node x="389.0" y="2989.0">application.logger.Logger</node>
+            <node x="2896.7326388888887" y="671.0">application.architecture.areas.IWaitingArea</node>
+            <node x="1079.0923093971626" y="605.0">application.drones.IDrone</node>
+            <node x="278.0" y="2006.5">application.phases.Phase1</node>
+            <node x="139.0" y="2006.5">application.phases.Phase2</node>
+            <node x="927.342929964539" y="1873.0">application.persons.ConcertMediator</node>
+            <node x="1733.8265292553197" y="1884.0">application.drones.Drone</node>
+            <node x="999.7015292553197" y="1403.5">application.commands.DroneCommandDepart</node>
+            <node x="305.0" y="415.5">application.phases.IPhase</node>
+            <node x="1193.7015292553197" y="1403.5">application.commands.DroneCommandNext</node>
+            <node x="2451.1450132978725" y="1392.0">application.architecture.areas.subareas.CarWaitingArea</node>
+            <node x="803.7015292553197" y="1403.5">application.commands.DroneCommandCollect</node>
+            <node x="3185.9575132978725" y="2590.0">application.drones.subdrones.IndoorDrone</node>
+            <node x="618.7015292553197" y="1403.5">application.commands.DroneCommandLand</node>
+            <node x="2100.1450132978725" y="1337.0">application.persons.IConcertMediator</node>
+            <node x="3229.7326388888887" y="938.0">application.architecture.areas.Area</node>
+            <node x="3599.4029181442083" y="102.0">application.persons.Participant</node>
+            <node x="2897.173751477542" y="0.0">application.architecture.visualdisplay.IVisualDisplayListener</node>
+            <node x="912.2277260638293" y="1016.5">application.commands.DroneCommand</node>
+            <node x="3202.2075132978725" y="1380.5">application.architecture.areas.subareas.IndoorArea</node>
+            <node x="2480.3950132978725" y="1005.5">application.architecture.areas.types.WaitingAreaTypes</node>
+            <node x="834.842929964539" y="2413.0">application.concert.Concert</node>
+            <node x="1913.5200132978725" y="704.5">application.tickets.Ticket</node>
+            <node x="4013.2075132978725" y="415.0">application.architecture.sectors.Seat</node>
+            <node x="2586.2075132978725" y="1752.0">application.architecture.Stadion</node>
+            <node x="745.3361258865255" y="704.0">application.commands.IDroneCommand</node>
+            <node x="1065.342929964539" y="2892.0">application.Application</node>
+            <node x="621.0458998226961" y="437.5">application.persons.IConcertMediatorListener</node>
+            <node x="2697.1945848108753" y="382.0">application.architecture.areas.IArea</node>
           </nodes>
           <notes />
           <edges>
             <edge source="application.architecture.Stadion" target="application.architecture.ILocation">
-              <point x="0.0" y="-280.5" />
-              <point x="0.0" y="202.5" />
+              <point x="288.8888888888889" y="-280.5" />
+              <point x="3200.096402186761" y="1732.0" />
+              <point x="3859.8325132978725" y="1732.0" />
+              <point x="-124.0" y="202.5" />
             </edge>
             <edge source="application.architecture.areas.subareas.PublicTransportationWaitingArea" target="application.architecture.areas.WaitingArea">
-              <point x="0.0" y="-37.5" />
-              <point x="344.0" y="1463.0" />
-              <point x="285.0" y="1463.0" />
-              <point x="66.75" y="93.0" />
+              <point x="-69.5" y="-37.5" />
+              <point x="-66.75" y="93.0" />
             </edge>
             <edge source="application.drones.subdrones.OutdoorDrone" target="application.drones.Drone">
-              <point x="0.0" y="-37.5" />
-              <point x="819.0" y="645.0" />
-              <point x="807.25" y="645.0" />
-              <point x="-108.75" y="148.5" />
+              <point x="-44.75" y="-37.5" />
+              <point x="4281.690972222223" y="2333.0" />
+              <point x="2060.0765292553197" y="2333.0" />
+              <point x="108.75" y="148.5" />
             </edge>
             <edge source="application.commands.DroneCommandCollect" target="application.commands.DroneCommand">
               <point x="0.0" y="-26.0" />
-              <point x="1878.0" y="1805.0" />
-              <point x="1640.875" y="1805.0" />
-              <point x="52.125" y="26.0" />
+              <point x="891.7015292553197" y="1207.0" />
+              <point x="964.3527260638293" y="1207.0" />
+              <point x="-17.375" y="26.0" />
             </edge>
             <edge source="application.phases.Phase" target="application.phases.IPhase">
               <point x="0.0" y="-71.0" />
-              <point x="0.0" y="48.0" />
+              <point x="219.16666666666697" y="585.0" />
+              <point x="332.0" y="585.0" />
+              <point x="-81.0" y="48.0" />
+            </edge>
+            <edge source="application.architecture.sectors.Sector" target="application.architecture.sectors.ISector">
+              <point x="-45.5" y="-126.5" />
+              <point x="3898.4575132978725" y="585.0" />
+              <point x="3835.2075132978725" y="585.0" />
+              <point x="0.0" y="70.5" />
             </edge>
             <edge source="application.commands.DroneCommandNext" target="application.commands.DroneCommand">
               <point x="0.0" y="-26.0" />
-              <point x="1494.5" y="1815.0" />
-              <point x="1571.375" y="1815.0" />
-              <point x="-17.375" y="26.0" />
+              <point x="1275.2015292553197" y="1197.0" />
+              <point x="1033.8527260638293" y="1197.0" />
+              <point x="52.125" y="26.0" />
             </edge>
             <edge source="application.architecture.areas.subareas.OutdoorArea" target="application.architecture.areas.Area">
-              <point x="0.0" y="-49.0" />
-              <point x="1525.0" y="447.0" />
-              <point x="1493.75" y="447.0" />
+              <point x="-74.0" y="-49.0" />
+              <point x="3471.2075132978725" y="1167.0" />
+              <point x="3491.4826388888887" y="1167.0" />
               <point x="87.25" y="104.5" />
             </edge>
             <edge source="application.architecture.areas.Area" target="application.architecture.areas.IArea">
               <point x="0.0" y="-104.5" />
-              <point x="0.0" y="81.5" />
+              <point x="3404.2326388888887" y="585.0" />
+              <point x="2902.994584810875" y="585.0" />
+              <point x="58.799999999999955" y="81.5" />
             </edge>
             <edge source="application.persons.ConcertMediator" target="application.drones.IDroneListener">
-              <point x="-111.75" y="-159.5" />
-              <point x="1815.0" y="210.0" />
-              <point x="1783.0" y="210.0" />
-              <point x="0.0" y="26.0" />
+              <point x="139.6875" y="-159.5" />
+              <point x="1290.530429964539" y="1702.0" />
+              <point x="1560.8890292553197" y="1702.0" />
+              <point x="-51.0" y="26.0" />
             </edge>
             <edge source="application.drones.subdrones.IndoorDrone" target="application.drones.Drone">
-              <point x="0.0" y="-37.5" />
-              <point x="1013.0" y="645.0" />
-              <point x="1024.75" y="645.0" />
-              <point x="108.75" y="148.5" />
+              <point x="-42.25" y="-37.5" />
+              <point x="3228.2075132978725" y="2343.0" />
+              <point x="1842.5765292553197" y="2343.0" />
+              <point x="-108.75" y="148.5" />
             </edge>
             <edge source="application.commands.DroneCommandDepart" target="application.commands.DroneCommand">
               <point x="0.0" y="-26.0" />
-              <point x="1683.0" y="1815.0" />
-              <point x="1606.125" y="1815.0" />
+              <point x="1086.7015292553197" y="1207.0" />
+              <point x="999.1027260638293" y="1207.0" />
               <point x="17.375" y="26.0" />
             </edge>
             <edge source="application.phases.Phase1" target="application.phases.Phase">
               <point x="0.0" y="-26.0" />
-              <point x="1542.5" y="1374.0" />
-              <point x="1501.1666666666667" y="1374.0" />
-              <point x="97.66666666666669" y="71.0" />
+              <point x="337.5" y="1732.0" />
+              <point x="316.8333333333335" y="1732.0" />
+              <point x="97.66666666666652" y="71.0" />
             </edge>
             <edge source="application.commands.DroneCommandLand" target="application.commands.DroneCommand">
               <point x="0.0" y="-26.0" />
-              <point x="1310.5" y="1805.0" />
-              <point x="1536.625" y="1805.0" />
+              <point x="701.2015292553197" y="1197.0" />
+              <point x="929.6027260638293" y="1197.0" />
               <point x="-52.125" y="26.0" />
             </edge>
             <edge source="application.persons.ConcertMediator" target="application.persons.IConcertMediator">
-              <point x="111.75" y="-159.5" />
-              <point x="2038.5" y="210.0" />
-              <point x="2070.5" y="210.0" />
-              <point x="0.0" y="92.5" />
+              <point x="195.5625" y="-159.5" />
+              <point x="1346.405429964539" y="1712.0" />
+              <point x="2141.5200132978725" y="1712.0" />
+              <point x="-124.125" y="92.5" />
             </edge>
             <edge source="application.architecture.areas.subareas.CarWaitingArea" target="application.architecture.areas.WaitingArea">
-              <point x="0.0" y="-37.5" />
-              <point x="92.5" y="1463.0" />
-              <point x="151.5" y="1463.0" />
-              <point x="-66.75" y="93.0" />
+              <point x="-46.25" y="-37.5" />
+              <point x="2497.3950132978725" y="1197.0" />
+              <point x="2005.1450132978725" y="1197.0" />
+              <point x="66.75" y="93.0" />
             </edge>
             <edge source="application.architecture.sectors.subsectors.OutdoorSector" target="application.architecture.sectors.Sector">
-              <point x="0.0" y="-37.5" />
-              <point x="1760.5" y="1339.0" />
-              <point x="1790.5" y="1339.0" />
-              <point x="-91.0" y="126.5" />
+              <point x="-56.75" y="-37.5" />
+              <point x="4063.7075132978725" y="898.0" />
+              <point x="4034.9575132978725" y="898.0" />
+              <point x="91.0" y="126.5" />
             </edge>
             <edge source="application.persons.Participant" target="application.architecture.visualdisplay.IVisualDisplayListener">
               <point x="0.0" y="-115.0" />
-              <point x="0.0" y="26.0" />
+              <point x="3838.4029181442083" y="77.0" />
+              <point x="3050.173751477542" y="77.0" />
+              <point x="51.0" y="26.0" />
             </edge>
             <edge source="application.commands.DroneCommand" target="application.commands.IDroneCommand">
-              <point x="0.0" y="-26.0" />
-              <point x="0.0" y="37.5" />
+              <point x="-34.75" y="-26.0" />
+              <point x="946.9777260638293" y="918.0" />
+              <point x="869.0861258865255" y="918.0" />
+              <point x="41.25" y="37.5" />
             </edge>
             <edge source="application.phases.Phase2" target="application.phases.Phase">
               <point x="0.0" y="-26.0" />
-              <point x="1264.5" y="1374.0" />
-              <point x="1305.8333333333333" y="1374.0" />
-              <point x="-97.66666666666667" y="71.0" />
+              <point x="198.5" y="1732.0" />
+              <point x="219.16666666666697" y="1732.0" />
+              <point x="0.0" y="71.0" />
             </edge>
             <edge source="application.architecture.areas.subareas.IndoorArea" target="application.architecture.areas.Area">
-              <point x="0.0" y="-49.0" />
-              <point x="1288.0" y="447.0" />
-              <point x="1319.25" y="447.0" />
+              <point x="-70.66666666666674" y="-49.0" />
+              <point x="3237.5408466312056" y="1167.0" />
+              <point x="3316.9826388888887" y="1167.0" />
               <point x="-87.25" y="104.5" />
             </edge>
             <edge source="application.architecture.sectors.subsectors.IndoorSector" target="application.architecture.sectors.Sector">
-              <point x="0.0" y="-37.5" />
-              <point x="2002.5" y="1339.0" />
-              <point x="1972.5" y="1339.0" />
-              <point x="91.0" y="126.5" />
+              <point x="-54.25" y="-37.5" />
+              <point x="3824.2075132978725" y="918.0" />
+              <point x="3852.9575132978725" y="918.0" />
+              <point x="-91.0" y="126.5" />
             </edge>
             <edge source="application.drones.Drone" target="application.drones.IDrone">
               <point x="0.0" y="-148.5" />
-              <point x="0.0" y="136.5" />
+              <point x="1951.3265292553197" y="1692.0" />
+              <point x="1724.3890292553197" y="1692.0" />
+              <point x="1724.3890292553197" y="918.0" />
+              <point x="1447.425642730496" y="918.0" />
+              <point x="147.33333333333348" y="136.5" />
             </edge>
             <edge source="application.architecture.visualdisplay.VisualDisplay" target="application.persons.IConcertMediatorListener">
               <point x="0.0" y="-93.0" />
-              <point x="0.0" y="26.0" />
+              <point x="1758.0200132978725" y="565.0" />
+              <point x="774.0458998226961" y="565.0" />
+              <point x="51.0" y="26.0" />
             </edge>
             <edge source="application.architecture.areas.WaitingArea" target="application.architecture.areas.IWaitingArea">
-              <point x="0.0" y="-93.0" />
-              <point x="0.0" y="70.5" />
+              <point x="100.125" y="-93.0" />
+              <point x="2038.5200132978725" y="918.0" />
+              <point x="2986.7326388888887" y="918.0" />
+              <point x="-90.0" y="70.5" />
             </edge>
             <edge source="application.phases.Phase3" target="application.phases.Phase">
               <point x="0.0" y="-26.0" />
-              <point x="0.0" y="71.0" />
+              <point x="59.5" y="1732.0" />
+              <point x="121.5" y="1732.0" />
+              <point x="-97.66666666666674" y="71.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.5666666666666667" x="1118.0" y="1077.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1302.0" y="602.5" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
