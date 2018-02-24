@@ -1,5 +1,7 @@
 package application.architecture.sectors;
 
+import java.util.ArrayList;
+
 import application.architecture.areas.IArea;
 
 public interface ISector {
@@ -10,4 +12,5 @@ public interface ISector {
 	String getSectorName();
 	void setRelatedArea(IArea area);
 	void setSectorId(int id);
+	ArrayList<Seat> getEmptySeats();
 }

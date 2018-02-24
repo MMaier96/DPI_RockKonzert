@@ -26,6 +26,7 @@ public abstract class WaitingArea implements IWaitingArea{
 	@Override
 	public void addWaitingParticipant(Participant participant) {
 		participants.add(participant);
+		visualDisplay.addVisualDisplayListener(participant);
 	}
 
 	@Override
@@ -38,9 +39,17 @@ public abstract class WaitingArea implements IWaitingArea{
 	public ArrayList<Participant> getParticipants() {
 		return participants;
 	}
+	
+	@Override
+	public int getParticipantsSize() {
+		return participants.size();
+	}
 	public void setParticipants(ArrayList<Participant> participants) {
 		this.participants = participants;
 	}
 	
+	public void resetParticipants() {
+		participants.clear();
+	}
 	
 }

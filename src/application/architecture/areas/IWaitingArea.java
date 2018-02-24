@@ -9,4 +9,6 @@ public interface IWaitingArea {
 	void removeWaitingParticipant(Participant participant);
 	void setVisualDisplay(VisualDisplay visualDisplay);
 	VisualDisplay getVisualDisplay();
+	int getParticipantsSize();
+	void resetParticipants();
 }

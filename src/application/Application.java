@@ -1,10 +1,9 @@
 package application;
 
+import static application.logger.Logger.printMessage;
+
 import application.concert.Concert;
 import data.CombineNamesGenerator;
-import data.ParticipantTicketGenerator;
-
-import static application.logger.Logger.*;
 
 public class Application {
 

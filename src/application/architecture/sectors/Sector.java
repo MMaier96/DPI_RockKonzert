@@ -74,4 +74,15 @@ public abstract class Sector implements ISector {
 	public String toString() {
 		return getSectorName();
 	}
+	
+	@Override
+	public ArrayList<Seat> getEmptySeats() {
+		ArrayList<Seat> emptySeats = new ArrayList<Seat>();
+		for (Seat seat : seats) {
+			if (seat.getSquatter() == null) {
+				emptySeats.add(seat);
+			}
+		}
+		return emptySeats;
+	}
 }

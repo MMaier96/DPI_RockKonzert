@@ -1,6 +1,5 @@
 package application.persons;
 
-import application.architecture.areas.IWaitingArea;
 import application.architecture.visualdisplay.IVisualDisplayListener;
 import application.tickets.Ticket;
 
@@ -12,7 +11,6 @@ public class Participant implements IVisualDisplayListener{
 	private int sectorId;
 	private int seatNumber;
 	private Ticket ticket;
-	private IWaitingArea waitingArea;
 	
 
 	public Participant(String forename, String surname, String areaName, String sectorId, String seatNumber) {
@@ -66,22 +64,14 @@ public class Participant implements IVisualDisplayListener{
 		this.seatNumber = seatNumber;
 	}
 
-	public IWaitingArea getWaitingArea() {
-		return waitingArea;
-	}
-
-	public void setWaitingArea(IWaitingArea waitingArea) {
-		this.waitingArea = waitingArea;
-	}
 	
 	@Override
 	public void handleNotification() {
 		takePlace();
 	}
 
-	private void takePlace() {
+	public void takePlace() {
 		ticket.getSeat().setSquatter(this);
-		waitingArea.removeWaitingParticipant(this);
 	}
 	
 	

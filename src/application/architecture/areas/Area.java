@@ -52,6 +52,6 @@ public abstract class Area implements IArea {
 
 	@Override
 	public ISector getSectorByIndex(int index) {
-		return sectors.get(index-1);
+		return sectors.get(index);
 	}
 }

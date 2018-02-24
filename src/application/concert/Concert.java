@@ -11,8 +11,10 @@ import java.util.Scanner;
 import application.architecture.ILocation;
 import application.architecture.Stadion;
 import application.architecture.areas.IArea;
+import application.architecture.areas.IWaitingArea;
 import application.architecture.sectors.ISector;
 import application.architecture.sectors.Seat;
+import application.config.AppConfig;
 import application.persons.ConcertMediator;
 import application.persons.IConcertMediator;
 import application.persons.Participant;
@@ -20,6 +22,7 @@ import application.phases.IPhase;
 import application.phases.Phase1;
 import application.phases.Phase2;
 import application.phases.Phase3;
+import application.random.MersenneTwisterFast;
 import application.tickets.Ticket;
 
 public class Concert {
@@ -48,12 +51,7 @@ public class Concert {
 			}
 		};
 		
-		printInfo( phases.size() + " phases were created! " + phases.toString());
-		
-		actualPhase = phases.get(0);
-		
-		printInfo("The current phase is: " + actualPhase.toString());
-		
+		printInfo( phases.size() + " phases were created! " + phases.toString());		
 	}
 	
 	
@@ -71,21 +69,40 @@ public class Concert {
 		printInfo(participantsPhase3.size() + " participants were loaded!");
 		printInfo((participantsPhase1.size() + participantsPhase2.size()+ participantsPhase3.size())  + " total participants were loaded!");
 		
-		this.eventManager = new ConcertMediator();
-		printInfo("EventManager/Mediator was created!");
 		this.location = new Stadion();
+		printSeperator();
 		printInfo("Creating tickets ... ");
 		createTickets();
 		printInfo("Tickets were created for every participant!");
-		printSeperator();
 		printInfo("A stadion was set as the concerts location!");
+
+		this.eventManager = new ConcertMediator(this);
+		location.setEventManager(eventManager);
+		location.registerDisplays();
+		eventManager.startManaging();
 		
 	}
 	
 	private void createTickets() {
 		for (Participant participant : participantsPhase1) {
 			IArea areaByName = location.getAreaByName(participant.getAreaName());
-			ISector sector = areaByName.getSectorByIndex(participant.getSectorId());
+			ISector sector = areaByName.getSectorByIndex(participant.getSectorId()-1);
+			Seat seat = sector.getSeatBySeatNumber(participant.getSeatNumber());
+			
+			participant.setTicket(new Ticket(areaByName, sector, seat));
+		}
+		
+		for (Participant participant : participantsPhase2) {
+			IArea areaByName = location.getAreaByName(participant.getAreaName());
+			ISector sector = areaByName.getSectorByIndex(participant.getSectorId()-1);
+			Seat seat = sector.getSeatBySeatNumber(participant.getSeatNumber());
+			
+			participant.setTicket(new Ticket(areaByName, sector, seat));
+		}
+		
+		for (Participant participant : participantsPhase3) {
+			IArea areaByName = location.getAreaByName(participant.getAreaName());
+			ISector sector = areaByName.getSectorByIndex(participant.getSectorId()-1);
 			Seat seat = sector.getSeatBySeatNumber(participant.getSeatNumber());
 			
 			participant.setTicket(new Ticket(areaByName, sector, seat));
@@ -94,16 +111,86 @@ public class Concert {
 
 
 	public void nextPhase() {
+		location.resetWaitingAreas();
+		
 		int indexAcutalPhase = phases.indexOf(actualPhase);
 		if ((indexAcutalPhase + 1) >= phases.size()) {
 			close();
+		}else if(indexAcutalPhase == -1){
+			actualPhase = phases.get(0);
+			printMessage("Next phase starts ...");
+			printInfo("The current phase is: " + actualPhase.toString());
 		}else {
+			printMessage("Next phase starts ...");
 			actualPhase = phases.get(indexAcutalPhase+1);
+			printInfo("The current phase is: " + actualPhase.toString());
 		}
+		
+		fillWaitingAreas();
+		
+		printInfo("All participants are in the waiting areas");
+		
+		printInfo("Participants in the car waiting areas: " + location.getCarWaitingAreasSize());
+		printInfo("Participants in the public transportation waiting areas: " + location.getPublicTransportationWaitingAreasSize());
 	}
 	
+	private void fillWaitingAreas() {
+		MersenneTwisterFast randomGenerator = new MersenneTwisterFast();
+		int phaseId = actualPhase.getPhaseId();
+		ArrayList<Participant> tempParticipant = null;
+		
+		switch (phaseId) {
+		case 1:
+			tempParticipant = participantsPhase1;
+			break;
+			
+		case 2:
+			tempParticipant = participantsPhase2;
+			break;
+			
+		case 3:
+			tempParticipant = participantsPhase3;
+			break;
+
+		default:
+			break;
+		}
+		
+		int randomParticipantIndex = 0;
+		IWaitingArea waitingAreaByIndex = null; 
+		
+		
+		int prevSize = tempParticipant.size();
+		for (int i = 0; i < prevSize; i++) {
+			randomParticipantIndex = randomGenerator.nextInt(tempParticipant.size());
+			waitingAreaByIndex = location.getWaitingAreaByIndex(randomGenerator.nextInt(10));
+			
+			waitingAreaByIndex.addWaitingParticipant(tempParticipant.get(randomParticipantIndex));
+			tempParticipant.remove(randomParticipantIndex);
+		}
+	}
+
+
 	private void close() {
-		// TODO close the concert when its done
+		ArrayList<Seat> allEmptySeats = new ArrayList<Seat>();
+		ArrayList<IArea> indoorAreas = location.getIndoorAreas();
+		ArrayList<IArea> outdoorAreas = location.getOutdoorAreas();
+		for (IArea iArea : indoorAreas) {
+			for (int i = 0; i < AppConfig.instance.amountIndoorSectorsPerArea; i++) {
+				ISector sectorByIndex = iArea.getSectorByIndex(i);
+				allEmptySeats.addAll(sectorByIndex.getEmptySeats());
+			}
+		}
+		
+		for (IArea iArea : outdoorAreas) {
+			for (int i = 0; i < AppConfig.instance.amountOutdoorSectorsPerArea; i++) {
+				ISector sectorByIndex = iArea.getSectorByIndex(i);
+				allEmptySeats.addAll(sectorByIndex.getEmptySeats());
+			}
+		}
+		printInfo("All empty seats after 3 phases: " + allEmptySeats);
+		printMessage("The concert is finished!");
+		System.exit(0);
 	}
 
 
@@ -217,6 +304,4 @@ public class Concert {
 			participantsPhase1.remove(participant);
 		}
 	}
-	
-	
 }

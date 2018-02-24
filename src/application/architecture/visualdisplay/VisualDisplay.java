@@ -3,36 +3,35 @@ package application.architecture.visualdisplay;
 import java.util.ArrayList;
 
 import application.persons.IConcertMediatorListener;
-import application.persons.Participant;
 import application.phases.IPhase;
 
 public class VisualDisplay implements IConcertMediatorListener{
 	
-	private ArrayList<Participant> participants;
+	private ArrayList<IVisualDisplayListener> listeners;
 	private IPhase actualPhase;
 	
 	public VisualDisplay() {
-		participants = new ArrayList<Participant>();
+		listeners = new ArrayList<IVisualDisplayListener>();
 	}
 	
-	public void addParticipant(Participant participant) {
-		participants.add(participant);
+	public void addVisualDisplayListener(IVisualDisplayListener listener) {
+		listeners.add(listener);
 	}
 	
 	
-	public void removeParticipant(Participant participant) {
-		if (participants.contains(participant)) {
-			participants.remove(participant);
+	public void removeVisualDisplayListener(IVisualDisplayListener listener) {
+		if (listeners.contains(listener)) {
+			listeners.remove(listener);
 		}
 	}
 	
-	public ArrayList<Participant> getParticipants() {
-		return participants;
+	public ArrayList<IVisualDisplayListener> getParticipants() {
+		return listeners;
 	}
 
 
-	public void setParticipants(ArrayList<Participant> participants) {
-		this.participants = participants;
+	public void setParticipants(ArrayList<IVisualDisplayListener> listener) {
+		this.listeners = listener;
 	}
 
 
@@ -47,14 +46,14 @@ public class VisualDisplay implements IConcertMediatorListener{
 
 
 	public void notifyListeners() {
-		for (Participant participant : participants) {
-			participant.handleNotification();
+		for (IVisualDisplayListener listener : listeners) {
+			listener.handleNotification();
 		}
 	}
 	
 	@Override
 	public void handleNotification() {
-		// TODO: handle event from mediator
+		notifyListeners();
 	}
 
 }

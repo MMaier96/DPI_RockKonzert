@@ -1,5 +1,8 @@
 package application.architecture;
 
+import static application.logger.Logger.printInfo;
+import static application.logger.Logger.printMessage;
+
 import java.util.ArrayList;
 
 import application.architecture.areas.IArea;
@@ -9,8 +12,7 @@ import application.architecture.areas.subareas.IndoorArea;
 import application.architecture.areas.subareas.OutdoorArea;
 import application.architecture.areas.subareas.PublicTransportationWaitingArea;
 import application.config.AppConfig;
-
-import static application.logger.Logger.*;
+import application.persons.IConcertMediator;
 
 
 public class Stadion implements ILocation {
@@ -19,6 +21,7 @@ public class Stadion implements ILocation {
 	private ArrayList<Entrance> entrances;
 	private ArrayList<IWaitingArea> waitingAreas;
 	private String locationName;
+	private IConcertMediator eventManager;
 
 	public Stadion() {
 		printMessage("Stadion creation started!");
@@ -34,6 +37,13 @@ public class Stadion implements ILocation {
 		createSectorsOfAreas();
 		
 		createWaitingAreas();
+		
+	}
+
+	public void registerDisplays() {
+		for (IWaitingArea iWaitingArea : waitingAreas) {
+			eventManager.addConcertMediatorListener(iWaitingArea.getVisualDisplay());
+		}
 	}
 
 	private void createWaitingAreas() {
@@ -85,12 +95,26 @@ public class Stadion implements ILocation {
 		waitingAreas.add(waitingArea);
 	}
 
-	public ArrayList<IWaitingArea> getCarWaitingAreas(){
-		return (ArrayList<IWaitingArea>) waitingAreas.subList(0, AppConfig.instance.amountCarWaitingAreas);
+	public IWaitingArea getWaitingAreaByIndex(int index) {
+		return waitingAreas.get(index);
 	}
 	
-	public ArrayList<IWaitingArea> getPublicTransportationWaitingAreas(){
-		return (ArrayList<IWaitingArea>) waitingAreas.subList(0, AppConfig.instance.amountCarWaitingAreas);
+	@Override
+	public int getCarWaitingAreasSize(){
+		int sum = 0;
+		for (int i = 0; i < AppConfig.instance.amountCarWaitingAreas; i++) {
+			sum += waitingAreas.get(i).getParticipantsSize();
+		}
+		return sum;
+	}
+	
+	@Override
+	public int getPublicTransportationWaitingAreasSize(){
+		int sum = 0;
+		for (int i = AppConfig.instance.amountCarWaitingAreas; i < waitingAreas.size(); i++) {
+			sum += waitingAreas.get(i).getParticipantsSize();
+		}
+		return sum;
 	}
 	
 	@Override
@@ -105,11 +129,11 @@ public class Stadion implements ILocation {
 
 	
 	public ArrayList<IArea> getIndoorAreas() {
-		return (ArrayList<IArea>) areas.subList(0, AppConfig.instance.amountIndoorAreas);
+		return new ArrayList<IArea>(areas.subList(0, AppConfig.instance.amountIndoorAreas));
 	}
 	
 	public ArrayList<IArea> getOutdoorAreas() {
-		return (ArrayList<IArea>) areas.subList(AppConfig.instance.amountIndoorAreas, areas.size()-1);
+		return new ArrayList<>(areas.subList(AppConfig.instance.amountIndoorAreas, areas.size()));
 	}
 	
 	@Override
@@ -151,6 +175,20 @@ public class Stadion implements ILocation {
 	@Override
 	public void setLocationName(String name) {
 		locationName = name;
+	}
+
+	@Override
+	public void setEventManager(IConcertMediator eventManager) {
+		this.eventManager = eventManager;
+		
+	}
+
+	@Override
+	public void resetWaitingAreas() {
+
+		for (IWaitingArea iWaitingArea : waitingAreas) {
+			iWaitingArea.resetParticipants();
+		}
 	}
 
 }
