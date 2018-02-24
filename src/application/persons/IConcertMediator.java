@@ -18,4 +18,6 @@ public interface IConcertMediator {
 	void setCommand(IDroneCommand command);
 
 	void startManaging();
+
+	void stopManaging();
 }

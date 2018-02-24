@@ -75,9 +75,10 @@ public class Concert {
 				allEmptySeats.addAll(sectorByIndex.getEmptySeats());
 			}
 		}
+		eventManager.stopManaging();
 		printInfo("All empty seats after 3 phases: " + allEmptySeats);
 		printMessage("The concert is finished!");
-		System.exit(0);
+		//System.exit(0);
 	}
 
 	private void createTickets() {
@@ -241,6 +242,7 @@ public class Concert {
 		int indexAcutalPhase = phases.indexOf(actualPhase);
 		if ((indexAcutalPhase + 1) >= phases.size()) {
 			close();
+			return;
 		} else if (indexAcutalPhase == -1) {
 			actualPhase = phases.get(0);
 			printMessage("Next phase starts ...");

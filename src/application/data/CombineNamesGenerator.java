@@ -18,17 +18,41 @@ public class CombineNamesGenerator {
 	private static final String combinedNamesPath2 = "data/participants_tickets_2.csv";
 	private static final String combinedNamesPath3 = "data/participants_tickets_3.csv";
 
+	public String getCombinednamespath1() {
+		return combinedNamesPath1;
+	}
+
+	public String getCombinednamespath2() {
+		return combinedNamesPath2;
+	}
+
+	public String getCombinednamespath3() {
+		return combinedNamesPath3;
+	}
+
+	public String getForenamesPath() {
+		return forenamesPath;
+	}
+
+	public String getSurnamesPath() {
+		return surnamesPath;
+	}
+
 	private File forenamesFile;
 	private File surnamesFile;
 	private File combinedNamesFile1;
+
 	private File combinedNamesFile2;
 	private File combinedNamesFile3;
 
 	private ArrayList<String> forenames;
+
 	private ArrayList<String> surnames;
+
 	private ArrayList<String> ticketList;
 
 	private MersenneTwisterFast randomGemerator;
+
 	ParticipantTicketGenerator ticketGenerator;
 
 	public CombineNamesGenerator() {
@@ -52,6 +76,46 @@ public class CombineNamesGenerator {
 		writeToFile(combinedNamesFile1, 0.2, 0.5);
 		writeToFile(combinedNamesFile2, 0.5, 0.3);
 		writeToFile(combinedNamesFile3, 0.3, 0.2);
+	}
+
+	public File getCombinedNamesFile1() {
+		return combinedNamesFile1;
+	}
+
+	public File getCombinedNamesFile2() {
+		return combinedNamesFile2;
+	}
+
+	public File getCombinedNamesFile3() {
+		return combinedNamesFile3;
+	}
+
+	public ArrayList<String> getForenames() {
+		return forenames;
+	}
+
+	public File getForenamesFile() {
+		return forenamesFile;
+	}
+
+	public MersenneTwisterFast getRandomGemerator() {
+		return randomGemerator;
+	}
+
+	public ArrayList<String> getSurnames() {
+		return surnames;
+	}
+
+	public File getSurnamesFile() {
+		return surnamesFile;
+	}
+
+	public ParticipantTicketGenerator getTicketGenerator() {
+		return ticketGenerator;
+	}
+
+	public ArrayList<String> getTicketList() {
+		return ticketList;
 	}
 
 	private void readData() {
@@ -84,6 +148,46 @@ public class CombineNamesGenerator {
 	private void readTickets() {
 		ticketGenerator.create();
 		ticketList = ticketGenerator.getTicketList();
+	}
+
+	public void setCombinedNamesFile1(File combinedNamesFile1) {
+		this.combinedNamesFile1 = combinedNamesFile1;
+	}
+
+	public void setCombinedNamesFile2(File combinedNamesFile2) {
+		this.combinedNamesFile2 = combinedNamesFile2;
+	}
+
+	public void setCombinedNamesFile3(File combinedNamesFile3) {
+		this.combinedNamesFile3 = combinedNamesFile3;
+	}
+
+	public void setForenames(ArrayList<String> forenames) {
+		this.forenames = forenames;
+	}
+
+	public void setForenamesFile(File forenamesFile) {
+		this.forenamesFile = forenamesFile;
+	}
+
+	public void setRandomGemerator(MersenneTwisterFast randomGemerator) {
+		this.randomGemerator = randomGemerator;
+	}
+
+	public void setSurnames(ArrayList<String> surnames) {
+		this.surnames = surnames;
+	}
+
+	public void setSurnamesFile(File surnamesFile) {
+		this.surnamesFile = surnamesFile;
+	}
+
+	public void setTicketGenerator(ParticipantTicketGenerator ticketGenerator) {
+		this.ticketGenerator = ticketGenerator;
+	}
+
+	public void setTicketList(ArrayList<String> ticketList) {
+		this.ticketList = ticketList;
 	}
 
 	public void start() {

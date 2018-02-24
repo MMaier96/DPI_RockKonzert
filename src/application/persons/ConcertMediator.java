@@ -23,6 +23,7 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 	protected ArrayList<IConcertMediatorListener> displays;
 	protected Concert concert;
 	private int dronesFinished = 0;
+	private boolean isFinished;
 
 	public ConcertMediator(Concert concert) {
 		this.concert = concert;
@@ -91,6 +92,9 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 
 	@Override
 	public void handleNotification() {
+		if (isFinished) {
+			return;
+		}
 		dronesFinished++;
 		if (dronesFinished == drones.size()) {
 			executeLandCommand();
@@ -150,10 +154,13 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 
 	@Override
 	public void startManaging() {
+
 		resetPreviousPhase();
 
 		concert.nextPhase();
-
+		if (isFinished) {
+			return;
+		}
 		executeDepartCommand();
 
 		sleeps500ms();
@@ -162,10 +169,15 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 
 		sleeps500ms();
 
-		while (dronesFinished < drones.size()) {
+		while (dronesFinished < drones.size() && !isFinished) {
 			executeNextCommand();
 			executeCollectCommand();
 		}
 
+	}
+
+	@Override
+	public void stopManaging() {
+		this.isFinished = true;
 	}
 }
