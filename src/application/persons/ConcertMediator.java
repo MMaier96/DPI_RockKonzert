@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import application.commands.DroneCommandCollect;
 import application.commands.DroneCommandDepart;
+import application.commands.DroneCommandLand;
 import application.commands.DroneCommandNext;
 import application.commands.IDroneCommand;
 import application.concert.Concert;
@@ -56,10 +57,43 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 		command.execute();
 	}
 
+	private void executeCollectCommand() {
+		for (IDrone iDrone : drones) {
+			setCommand(new DroneCommandCollect());
+			setDrone(iDrone);
+			executeActualCommand();
+		}
+	}
+
+	private void executeDepartCommand() {
+		for (IDrone iDrone : drones) {
+			setCommand(new DroneCommandDepart());
+			setDrone(iDrone);
+			executeActualCommand();
+		}
+	}
+
+	private void executeLandCommand() {
+		for (IDrone iDrone : drones) {
+			setCommand(new DroneCommandLand());
+			setDrone(iDrone);
+			executeActualCommand();
+		}
+	}
+
+	private void executeNextCommand() {
+		for (IDrone iDrone : drones) {
+			setCommand(new DroneCommandNext());
+			setDrone(iDrone);
+			executeActualCommand();
+		}
+	}
+
 	@Override
 	public void handleNotification() {
 		dronesFinished++;
 		if (dronesFinished == drones.size()) {
+			executeLandCommand();
 			for (IDrone iDrone : drones) {
 				printInfo("Drone #" + iDrone.getId() + " spotted following empty seats: " + iDrone.getResultList());
 			}
@@ -87,57 +121,51 @@ public class ConcertMediator implements IDroneListener, IConcertMediator {
 		}
 	}
 
-	@Override
-	public void setCommand(IDroneCommand command) {
-		this.command = command;
-	}
-
-	@Override
-	public void startManaging() {
-		// reset
+	private void resetPreviousPhase() {
 		dronesFinished = 0;
 		for (IDrone iDrone : drones) {
 			iDrone.setCurrentAreaIndex(0);
 			iDrone.setFinishedCollecting(false);
 			iDrone.resetResults();
 		}
+	}
+
+	@Override
+	public void setCommand(IDroneCommand command) {
+		this.command = command;
+	}
+
+	private void setDrone(IDrone iDrone) {
+		command.setDrone(iDrone);
+
+	}
+
+	private void sleeps500ms() {
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void startManaging() {
+		resetPreviousPhase();
 
 		concert.nextPhase();
-		for (IDrone iDrone : drones) {
-			command = new DroneCommandDepart();
-			command.setDrone(iDrone);
-			command.execute();
-		}
 
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		executeDepartCommand();
 
-		for (IDrone iDrone : drones) {
-			command = new DroneCommandCollect();
-			command.setDrone(iDrone);
-			command.execute();
-		}
+		sleeps500ms();
 
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		executeCollectCommand();
+
+		sleeps500ms();
 
 		while (dronesFinished < drones.size()) {
-			for (IDrone iDrone : drones) {
-				command = new DroneCommandNext();
-				command.setDrone(iDrone);
-				command.execute();
-			}
-			for (IDrone iDrone : drones) {
-				command = new DroneCommandCollect();
-				command.setDrone(iDrone);
-				command.execute();
-			}
+			executeNextCommand();
+			executeCollectCommand();
 		}
+
 	}
 }

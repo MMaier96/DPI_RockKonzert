@@ -74,6 +74,7 @@
  > Example: A01[1,5,20-27,66-72, ...]
  
   ## UML Diagram
+  [(click for fullscreen)](https://raw.githubusercontent.com/MMaier96/DPI_RockKonzert/master/uml/diagram.svg?sanitize=true)
   ![UML Diagram RockConcert](uml/diagram.svg)
   
   ## Intention
