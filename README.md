@@ -1,4 +1,8 @@
  # Rockconcert
+ ## Screenshot
+ This is a console application, therefore the screenshot only contains logging of the procedure!
+![Screenshot](https://i.imgur.com/KfHxNzf.png)
+
  ## Used Design Patterns
  ### 1. Mediator (Example)
  The mediator design pattern implements the command design pattern. The mediator coordinates the behaviour of the registered objects. In this example the ADCMediator send a status to the runway or the flight, if they grants permission to land.
